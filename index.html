@@ -1,0 +1,1846 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drip Lesson Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Drip Demo">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#E9EEF3">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAQAElEQVR4AexdB3xTxR/PbtM0HWk60g1t2XvvLSLIEARFkKkMyxRwIEtBZIl/kCkisofIkqkyBYTK3qNAJ4Xulc4k/X/Tl75c0pU2afPahM9x/b3f/e53v/vdN/fu3d27x4lIkFuD1QNFeoDDsv6zeqAYD1jBUYxjrGwWywoOKwqK9YAVHMW6xppgBYcVA8V6wAqOYl1jTbCCoxwYsJQsVnBYSkuXo55WcJTDaZaSxQoOS2npctTTCo5yOM1SsljBYSktXY56WsFRDqdZShYrOCylpctRT5OCoxzlW7Mw2ANWcDC4ccxtmhUc5m4BBpdvBQeDG8fcplnBYe4WYHD5VnAwuHHMbZoVHOZuAQaXbwWHuRuHweVbwcHgxjG3aVZwmLsFGFy+FRwMbhxzm2YFh7lbgMHlW8HB4MYxt2lWcGhbICklDUF7bfGUFRxaCCzfuHPFT7u01xZPMRccldw0t+4/OXjy/IET527ee1LJRTO2OCs4NE0ze9lGipq/8meKsMZWcKgxsGLTrheRL9UUi/U0LHLlpj0UbeGxFRysWw+ebt79B4mDn/ccufvoGcmxTNrSwZGSLp+xcLVe2+fl5X36zap0eaYe39IuLR0cn3696uXr+MKtHvUq7vPv1hbmWxTHosGx5bdjl6/fLa69z1y+vu3AieJSLYFvueC4fvfRsvU7yDYWetW19axNcr5bsw0jEpLDcNq05lkoOBKSUqbM/4F0JVfo4NFrkkevYI6tiOQHz1kBYZJjObQlgiNXoUCTJyanapuZzfHoPZUrtOfZOXr0msxisVkF/yAGYaVSVcCwoL+WCI7Fa7bdfhhKNrJLu/eEskCKY+ddV9J2EEVTMYSXrNtO0RYVWxw4Dp26sOfIX2Qbi2o2d27ai+RImvcFk+TsOHjy6OlLJMcSaMsCx52HoXNX/ES2q0Di7f7GeJJD0WDynWQUTcWzl2148OQFRVtIbEHgiEtImjB7mUKppJuWIxDK+n7K4dvQHJoA07PvdDaRlJurmPDVMosanFoKOHJycsd/uVR3uwYbg1C+2IUGhB7Bd3T36DWJZMYlJGNwivEsyazGtIWAg/XFknUPQ8PJhpS0fw9jT5JTmBb5NZK0GUzyMTid/72lLNtaBDgwE3ri3BWyjcW120qavkVyiqMlLd62D2pNph48df7X346RnOpKV39wXL15f/mGnWT7CaS+bt3GkpySabfuHyELKbNsw85/b9wjOdWSrubgiIqJDZ77PVZZ6cbj2Io9+85gc/k0p1SCwxMgCzLSklA4Zf7KyJevaU61JKozOOQZmeO+WIqYbDnZ29N5IieSYwiNLLI+U0lJLOhPnL1cTzkpUA3oagsOlUo1dcH/6P1dVFNh9kLoEUDRZY2FsiC37h+TuZ5FRE//ZhV6EZJZnehqC46Vm/dcunaHbCrHRj3FtduRnLLSDnU7ODbsQeb6J+T2/zbvJTnVia6e4Dh57orezj+hVx1px6HGt5y04zBbWRCp56ddh/+++B/JqS50dfxS08PQsM90N3HxxFJZn2lstgl+CWwOB6p49hISATMX/fj0RSTJqR60CfzFKEdghR2DUEx101ZhCtyz3yzMlNMcIwmurb0MzzvEzHp2Tu64L5Ykp6YbqZlp2asVOJRK1SdfLY9PTCa9LHtrssDZg+QYT9u4eOvNrL+KS8TDLUbBxitnjoZqBY7vf9qF6W3SuZI2g+18G5IcU9GYWXdu9Q6p7b/bD3+oXoPT6gOO81duYpqcbC1RQEtMfpMc09IurQaIajQjdf68+4jeIxKZWuXoagKOiJevP/1mFel9vpPMo2cRGzVIGeNp954T+I5upJ7pX6+KfhVHcqouXR3AgeX4CV8uy8jKpptBPQjtO71Mc+R03jIRHL6NrM90Nk9A50qTZ3wyZwVMojlVl6gO4Ji9bIPeTKjHm5/wHd0rqlV09Qoknu49xpG8J88jFq7eQnKqKF3lwbHv6JljZy6T3nds8qbIvwnJqWjaPrCl3szp/uNnj/z1T0WXW9H6qzY4noZFLlr9C+kjG/cAabv3SU7l0NIOQ21c/cmy5q7YFBYZQ3KqHF2FwZGdkzN57spcBbEn1EYkw0woxwyVYnN5KJp8ISonN3fy/JU5uYoqhwnaYDP4kS7bSGLx2m3h0a8IJWxZ76k8OweCU6kkz94ZE25kkaFhUct137gkU5lPV1VwnL96c98fp0n/OrcaIPSqTXIqnxZ61XVq/jZZ7o5DpzABQ3KqEF0lwRGXmDxr0RrSyzZuNSQt+5Ecc9EurQfauNckS/9s8VoYTHKqCl31wIH1i2kL/ofpBNrFbL6trPcUtikWXWmd5SbYHC6WXWASrSE1XY4Juqq4J8iU4KDdUaHE+h0Hb9x7TBaBaQa9NXQytfJpvtjFvftHZLnX7jzCzDrJqRJ0FQMHnl3Xbfud9Ky4Xhf7gOYkhwk0Zj7s63QgLVn1y74qt+ejKoEDK/KfL16rUuXRTsc0qGunYfQlowi3ziN4YiltklKl+mLJ+qp1c6lK4Ni6/9hD8q013N17T+EQ6xp0SzCBUC+79J7CIkZCD56+2H7gJBNsM9CGKgMOLHWu3vIbWStJywE2Lt4kh2m0jaufc/O+pFUrN+1+FZdAcphMVxlwfLFkXXZOLu1KvpOHc/M+9CVjCUnLvjwHV9o8VGHOcp0zIOgkBhJVAxwHT57HgJ90n1v3j/HQSHKYSbO5fL1XLy9du3Pkr4vMtFbPqioAjsys7JWbdD5mIK7fRVhwSpNefRh4aeddV+/JZfnGHRmZWZSpTI6rADgwQxCfpD3cDYtb0nZDmOzTwra5tn+fI7Cj+fGJKb/sqwLv6TMdHHEJyZv3HaXdCkLa4QOujQhEFQpcoRhr+qTBm/ceiU9KITkMpJkOjh+3/padnUM7ju/sKa7dnr6sQoS4bgeBRPtslZWVs3arzmweA+vCaHBgRf7342dJr7l2/IDN1h4SSiYxnMbSj0v790gj9x39OyomluQwjWY0OJau30HOh9p61q6gl1Aqp1VEfo2E3vXoslC1Zet1TpWhkxhCMBcctx48PXv5Oukmty4jycuqSEs7fkCa/dfFkHuPn5McRtHMBcc3/9tMekpcq51A4kVy9GhbLquJO7dvkKCrH19UhnN79NRU7KWNi499rTZkGd+t3UZeMopmKDhOnLuit4zi0r6kx1c/B86IRrbd/AVBEm5TD96wBraMxYe03XssDpcGwY17j//+h6EnODAUHGu37qfdB8Kx8Zs8kTOIIkMjN+6gujb2Au1AFXRHX4b2Hjx7iWMjnRNgNu46VGS9zM5kIjhuPwx9Fh5Nu4ZjY+dS/BZAXwcOOgxamCZqS3hcLVpoNiMISYt+5JEQGHY8DWPi8R5MBMfuwzoH1zs07EG6kmxeBxt231oCTlEg4HJYSCWFmUNzbe0dGnQj7dm2n4mfhGIcONLlGcfPkm+wsZ10O2HSp28FCGyK6R+UCiVLnpD5KjQ7PlKRaeJjVRQZaVAL5bmp8XlK7YszpG0l044Nu5MCR09fwhISyWECzThw/H7iHHkuj51/E56dY5GequnE8RLr269Sqa5e+mftiu+mfjTsv/XTo/cvjNwzJ2xz8Ist0+Iu7MxOiCpSlYFMACLu/PbnW6aF/TIJaqE8fNuM0I0fRf+xMvXJlTxVGT7Ywxe7CH0b0eVmZeccOHGOvmQIoe9cs5u18+Ap0gbHRjrdL5nUudCQMyUp8YdvF2zd8OP92zdVut9WUsqTUu78Gbl3XuLNE6QSA+m8vLzE639E7JuXcvdvlTyJzMVWqTLDb8f+uT76wGJFRhmWSxwb6lRt2+/lMYy0xOQ0s8Bx5eb9SGJGGQN7O5+iz+WpL+U6C3WMj46KXDR71rMnjygfuTiJe3duNW3UwFEDe7ZvVp9DvSOpUiZe2hNzcm2ZfuUQfnViTeK/+4EDKOdyOR2a14daKH+rU0uJoxhMhKxXTyN3zclOMvT9WJF/Y1QQGakQ8fL19bsa4ylO2WMT5+CYWJ9x6vYc+ZtUgEc+NruI0SZY7bz5pGR8bOzqJQvl6WlgSp0djmz4Juzs9n2rvlo0beSaecGnflkcdWHnzLHvIhVBHhoSe7YMRyS8Pv2z/Pk1ZET47OMh0f/sOrl5MdRC+W+r54Sf235o3XwUilRlVurLQ0sxEAFdasBqi96wdK/uO3ylaqhoAQaBIzk1/e9/QrQVZnMc6nXWXhKUjwNHbAOEaFgKhWLtisVpKepz4mrX8L6yb1W3No3ZbK0A5Bzs7RZM/nDTt9NBI6Q9vJB0w6AdFUnXj6Y/1nzA69elM+cFD7O3E0IDHdhsdo92zS7t+SHIzwtM3L9ijq5UKQ16f9qxflcWW9sEx89cTk5R4xt6mBC0lpndmlPnryiJMZ24Vms88hVpVYCzdoYRAkd+2/M65iUIL3fp0Y0LPVwloIsMQ/t02fD1FCop4cqBnORSTrbPToxOuHqQkkfGd9/sSNGFYxR9fNMiquicxOjEqwcKyxTmcIX29oEtaT6qf1p3OYlOMgvBIHBcvfWAdIEoUOcrJ2QS5sjpy+TExDOnNLuBti6dKXMrFhlUluH9u7/zRv6OEJUi/tJuillcHH9pL0ul7gMwbkHG4sQoPoretGgaRSfdOqFIT6TokmNRYCtSIOTWffLSvDSDwHEx5LbWF2yOHbG6reWzWFIhG7PjNOfPo4dU+Q8m3do2adOkLs0vgVg4bSQ1PpW/uFnC+DErIRKPIdAD4YXTRoEoNXRt3RgBYmyVKumWQa+o2HnVYbG0d8DL1+6yGPOPKeB4GhZFvhtt4x7AIY4IJt3lYa+1WS5Pv3T+DJX63YwxFFFq7O/lPmKAenUDbZJ843hx8ikFg5Ixg97083QrTkyP/91MzWd+Uu6dVWTJ9VILX+LWKXDTHgkUn5TCnPOAtI4ubHdlckJu6nSndj7F9gF2fLSpxrTb1/7LzVFvIhzcq2P9QD8N14A/GFfaCNTPO+nP/sOTauEceUplWqj6CQVisycOLSxQHKdBkN+AHvnfZlDkZITdLE6M5Ov1kXq3V1KykmnGgEN3wCH0blCcI0QEOJ491UwMDOzZoTh5Nb/QfzcXp7b596C8nMycoqZNs+PCWUr1O1QdWzR0kzgWUlASgzYmM+ZpSXIFaUKf+gWk+m+IrivULDP9Zwo4dD6ZxuGV8FqKiFiaf/5YcxZDDR9ZkQ48c+X2onW7Bk9Z9Ol3G3f9cSY5TdvP1/TVZCmyCbFuQikMKBCjLuk44mXspn0nxs9bNWzGkh+2HLjzSLuhq6aP5qj1bAPBIQtiE58Vu3SNGHvR5ZmDYAQ4Hj8LJwccQu96JbzNZks8xr5+rZmODPLz1PPe88iYPh/P6Tdh3pKf9p648N9Pe4+Pm7uq+TvBh/7WrOrV9NY0YW5qEQ+0ihQNs2Yh2CkUyu827mnSf+L0xRt2Hjlz+PS/c1dtbff+9EnfrE3JB59/PX5P2gAAEABJREFUgeZSH5Upmzk8ga0siKIRQ0louFFrQFBiksAMcDzX2c0g9NHuwi1cyfRczREMOdk5rDw1jW4fIwNS8lVcYqcPZpz/T3/k/zo+afjMpT//pl7FoHsOVU4RL58pczIphTULugHqEvGnSzZ+u3534WMCfz3w56DJC1UqlZNY5OxgD0mWSlHkgEadpPtfr8pPdR2iK1t5V4wAR3yizlKWrYtPCQ6Ik6sBAYFchXpMAMLDzQUxGaZ+u568g5BJoGd/vwX9imdBrjxFNph6IS9/wAGmTHdK7e/LN37Zr7M0CBk6XLn18Idf1dNfXu4ak1S5WXRqCYSNbpXjEtWzvSXIV04SI8ARl5hC1pZTzBo9JfMsSbN/QijUTGNHxegcRB/+MvbYOWIanspGxBlZ2VsO/Bn1Kp7icfgaPdQlFdPbi6CN4lDxj9uPUERx8dodaoEXUeq7ElBM6ylOnuJz7XQ+WBmr+2uhZCo/ZgY4EnR6Dp6opKeD5Oy8y1HqPgNzU0I7O7gsMSUtNT0DBBVC7mhGqdRlkfGdRy+ehml2InJsRYVlOLb59wUWK5TYsAixu6W9SRCbmPIgNEKe/5405jDYbO2DN7IXF/T2rMTFW3uOAlfF6faiXFvNInhBuv7fK9GK7XezABFewen3j4ib9J3S2g/q0MZPCsAhcNSMTMGng6DgQxlPw9WrNhQfvQjanqJLiHHroVL5BeZRlyXEXJFOz6F3ny0hYwUmsVgM6Tm0PxSOyJnNZpda57iMPECELa1JSZK/775ddV4MoQT04h7tm9M9h42HRgkpgyla6jKUAAfmSYPyl16ppCJjNpttZ2tLJdm6B1BEqTFycYXan0Rcgs59ttTsFSTAEHBobys8YRnOp6a9f+Avzao63FQ/yA++BlFCCPD1uPEgFAJsgdBGol5qB00GNTP/tLHr957SoxMINKpTA3EJIdDX84+zVyiBImFHJRWOuULtzVSvKy0sXDkc84NDoVSmZ2ieG1FnvQ4WnBKCnV9jFocHgZMXrl279wQEgkhoO3pQTxDFBTz63n38As+cEND7Dhc4VGBzOPY1m4HOVSgWrd8FggqThvfn89QlUpeF4/7d257+N3/WnMMTwbzCEsVwuMRIKzk1DeUWI1h5bPODQ3/Xdf7UhYEO4Ant7YM0K/tfrfyVzoVFuHoBvvQlSaBT+Wb66MOnNT9up4bqFThSgKYdG2g2iGOm60XUK4rfsmEtLOpSdOH4g77dTl+5RfHFtdtxbdTjZerSgFinLbKz1YNuA3JVoIiOQRVYTvGqhbY2ZKIys2y3W7p1L924fy7kDqUKncelvT/M/WSYgK/zK+/csuHtI+uPn72alw9BgaufbVEDDkqJ0LOWIP+OA+EFP26nmIgnDe936pfFAbrT6u5S561LZw15q+PN/LsVxJya9EJseFDoVtxeVMQDtuHaTCJpfnDwuFw+0VErM7QnPBlSQ7SufcGryRPmrYqJTaRyQefn44ZEXth5fNOixTPGbFv22YPjm45tWnT5xoMjZ/6FTB6LXepr+9LOIyEG4d9PXdx6UPuqVftm9W8dXn91/+p1Cyav+GLcuR3LH574uV3TesFfr4UwgrhuJxuXIoYySCouKImd67a2guLEKpNvfnCgtmTnoZRrB6dIMiS4dh3Nd1KvomHk+Pb4ufQtAHnRhXRq2XDKh/0H9mzv6+m2ef/JCfNXg4/g0mYQPZ7FZZHBzqu2S2vNx2ODv16z7ZB2/zNuT/UD/UYM6DHh/T4tGtSKeBnb++M50a/joYfv7OnaaTgIwwM6JxUBDvp5x3ANFSHJOHCgkoqssr2gxuXbevabybVVP+Y8fhHVYuCk73/Zn04McqHz3tPw/hMXTF20HjSCfd2OkhY6x8eCWWSQtOwvrt2WSvpkwY8DJ33z8JnOShDm35b+tK/Vu5Of5k+XceycPPvO4BSzU4nSUzhWZunsK7bTvdUWlq8cDiPAIXXRmQIiO1gDvcB3kHq+8wU3f6ogOyd3/urtgT1G9xo7mwqdhs1oM3iK5iGCxRIFtnLvaui2MRjg1n2cqGYLEAh/XrzectCkzsNnUpoRB/YYtXDdTmodjit08BrwGYyBZJmCQq4z0pJKdBxSJlUmFGYEOPy9dOYoyzrsoNyBe7zv8GUO9bvm5V+j57h4/T4VbtxXT2mAjZ+1W8+Jsl7BeFLFpYEBwrLek916TkDbU1kw+UFpRoyVGjDzWGyHBt18hy9VT5DguoxBr8q+ug4pozKTiTMCHH66vtDzlOF1xaOjW9dRvsOWiOt1YRHbZ6CB5+gu7TTC/8PlDgWjVzDLFBxqtfUbscKl03DyuGq1Bp4AiPQbvtSty0gYoOaU/b9elf291UOosqsxcQ5GgMO3YHcMVbns+HCKKF9s4yxz7zY6YNxGvxHfe7071+f9Rf5j1/p/uMypUXcO36inAA7fxrnRG/4jVviPWQO1UI4iAj7eAEQKnNzLZy2VKyc+jCKo2M/bKG2UEuNjRoCjXpA/WZOMcBPsk2PjCdlBKvQItJH6YK6M1G88zbMTQy2UY3iBgoxXKA/XzNBQquoG6jiEYlZ+zAhwBPn7iIh3DHMSogx8I6jy/VURJSrkSblJ2rVfRwf7Gj76ux4rotxSdTICHLCyRaM6iOkgDzNB50FrYziR/uwGaWGLhjquIJMqmTYhOIyyvHmD2mR+uSnuLKRCJtN6lW3WUMcVZrScKeDQ80hm5H0Dt+aa0XcmKTpPqciMvEeqam7tOUh3gG5Sr5bEST3FCRohT5GTEfUQhKlCZsyTmOM/ptw/V27MIWPKvXNQkhlj0KtKBlqeEXmfpdLsikUWZ0dxw9pFbD5CUuUHpvQcXC7n7e75L78X+CAjwmTDjtyM1OjDy+XPr8Wd3fLy8LJynB+HLMgYd24LlIBQZOjMdheYXJ6/GbrPKe/06szhMKVRmGIH/DqgZyfEdEh7eFFV8PIIzSwfkRsfwVKoX6lF9szoh5F752XHlmEqJSs2LHLPXGREdgT0ajmJpnnpSJklT32k80mvQW91QREMCQwCR90g/wBih6YqW54YctgkbrLzbWDjFkCrUqYnROxfEHdhh6K0t+AhEHtua+T+r5VyzU4AKLHxCLLzLvY9bwgYHhJDDuURL7bUq1Wjpm/ZFvoNL6sckgwCB6wfNVjng4/Jd/7MTdV5JwUy5QueA2bZ+Tel87JVqpQ7f0VsnxV3fjsem/VOaVIpcuUvbsWe3xaxbWbqvTMQpjNCiWe/GfSlMURuanzK3b9IDSMGlm1/EJm3ImhmgWPAm5083bVfcWaplPGX95mk2lyB0PPtaZLWg0ht6JxS7v4dc3Tl843jIvYtQCfx+swWEM9/Gh9z7IfUu6dVOdrXYZAR2aEEqkAbH+Iu7mTl5dF6ZG4ufXuU7awAOm8FEcwCB4/LHfdBf7Kq8tAQEz4dSFr28x6ygLzFaMpSKXNiX6CTSHtwDgRAqeEX/EEWZET2Aoaxf7NehWY815n7Ch75LnOGolT1mAUO2PROry56uxniL2j3b0LAyGDrVsNnyDy3nhO59hJDVPHEUveen/gMmYeMhsgbKINeipREt9G/Z0eSwwSaceAQ8HlfBn9IuiY7Ljz1iXrXJ8k0knao1cb/w+XubwYLfepre3ZCaR6LLfRp4N4r2G/4MnEtzQZ3It0oEk8oOXiAInR8ETwCvSbBYATJOHDAK727tmvbvCEIOsSf25Zj8MnAdK6SCTaXJw5q5dX/M/8R33v0nubWbaxL28EubYeAwKX/iBVe/WeJA1uZZNGVtAQVib+g82m3Tq2b9Oyoc6YgKW9GmonggDu++2wCuY8SA8Pog0uweokkkwcsu9vXbOpQr5Nz87edm/cBgUswTV4QFKIKqAiqA5oK9iLh4s8mUDTTYoaCw91VMmvCMNJZyoxkuFWZrT23iUytEjSMV1chQ/tiMMz+fOKHLs7aFyHBYU5gKDjgoPf7vdG9fQsQdMhNfvXy8HKsVNGcKkSoFDkwHlUgbX6zc+t3e3clOYyimQqOfCetmDO5ru4BktmxL2JOrMnLK8OXTfI1mTnCot2r46thPGlHnQC/ZV8Gkxym0YwGh62NYM2iWVioJL2WEXYz9swWksN8+vWZzRkROgeUSZwdNyz+XCDgM9l4RoAjI1f5Oj3naULW9Zfp516kHH6UuON27LqQmCUXotbdTW82eCzfVkg6Me3hhagDixVynZs3KcAcWpGREvX7onTd1TWBnaj54LE/3klVVzAkBpVFlVFxVB9OgCsychnRNZoNHEoV67U8525sxpnnKUceJe29m7D99usDDxL+epYcEpX2MC4zOjUnLUeZl8dydPPoNHy8Hj6yXj6O2D0nM/oRc3BQ2JKMqIcRu2Zn6e7/ADI6Dx8vlrqhaqggqonKosqoOKoPJ8AVRx4lwi1wTqw8F44qrLlyOJUKjsQMxe1X8qOPkzaEvPr6XPjqf2P23Ik7/Tz57ms5gFKCF4rEhyorLergkoSrB3FHrxxnGV4KTIq/8nv0oaUq3Vc7aWQUpwpOgCvgELgFzln170s4Cu6C0+C6hExFcRkrgl/h4EAneSUybffd+CX/RH5/OXrfvfh/I1MjU7PhhTLVR42PDyeInF3IXGxWXtJ/h14eXsaoWwxuJdGHliRfOwLzSGvtnCToAtFnkMxSaTgK7oLT4LqVl6LhRjgTLgWGSs1rpEBFgQOYOBmatPxi1OorMX88Trz3Wp6Wbex91NHVvfvYqd71GuvVOTMavfeXCSGHlNkZekmVfAkDEq7+Hr7jc9z19Ir2qtOwx8fTHKRuevyyXsKNcCZcin4X7j0VmgRXl1WJgfImBkdylvJ8WCoAgfBPWCouDbTDQDGeQNBqwNCmbw3kcHVOZVFlZySFHAzfNsNcEKFgEbb106T/juTpbmDj8PgwuPXAYTzj3rcr7CK490KBt0EkZ2n3ohYWLgfHZODA8Ap3yl9vvv6zIrFM1bBG01ZdR0/Su8UgySwQKQEWMEnkJOk+dgoMBl1xAZ0HupCtN2PvxWbkma4YjklUhSZkrg+J2XM3Pk5eSSdZYQjSfexUzzpFfHmj0iBSMizgWNxKun88TeziCroSQqw8Z/eduPVXY9AcJinOWHDk5eUde5y45WZsdJpmB69JzDJECW4xbQYObz/0I4lXEZ/hoSDyYvNkzIhgHCCPvI8JbEPUliwDJfKI+3gSifr9WygvfBOhsrt4+7UfOrYibiWU/hJiNASa48STJDRNCWKGJBkLjt/uJ1yONNk+fUMs1pNxrxHYZeTE9u+PcfYs6jh9lQJjQzRhzOFlzzd8HLV/UfzlffKw21kJkYpMgw4fy81IzYqPRJa4y/si9y+Ckpgjy/AkkhXzhJX/bUA9eyRevjCm84iJ7jWC9JIq8/JiROr++wlGlmgUODAIwsO3kRaYJLt7zVpdRwW3e2+0o0dJu7ezXj1NvnEs5ujKqN1zwjZPDl0zEoxTVNwAAAVgSURBVL/+iN1fRR9e/vqvDcBN/MXdIHAJJpIgEP7L5Kg9c5Al5cax7Fclvc7kLPMBLLqM/ATGmKRSRiq59UqOBjJGiVHguBplzj6jcLU9Amp3HzO53ZBRTp7ehVOL5CgzU3MSojIj76U9/he4Sb51EgQuwURSkVkKM9FpAZddRwczBBa0hUY2kFHgUBDfCKYNMjvhEVin26hJPcZ92uiNvu6Bdbg8ow5sKa46XL4Ayhv17Ntj/Iyuo4KBy+Ikqy7fKHDUkZbphN5K9RKmmwJbtm8/ZFTfGfM6DhtXq10XJw90J6UfuV+ilWwnmTdUQWHfT+dDeWCL9g6V9TBSomFFJ9aR6ixYFi1UPNcocPSp7Sy105mMKr4gs6VguszVr2aDLr26jZnU//OFb4yfieeI5n3erduxh1/jFm41Au0lrhy+ztI5Oht7F1fXGkEQgBiEO3zwETIie7fRk6AKCjlcrtmqZFjBMjG/V5BRpxIaBQ4BlzOptaypTGSYteaX4nJ5YhcpniO0rT70o54TZgyYtbD31LldR0/uNmYKiP6ffdNz/IyOQ8c2pzHkH4iMyG7+OhhmQWMP0fgWMj7XqPY1KjPsRPHv1peOburmJa6QWzuKqJxgKxI5y7ycPDxBVE6JFVQKGgLNMaSBlM818h7KMhYcVA0DXYQTW8uGNnKV2un0z1SqNa4cD8D57zeUoiHQHCYp0TTggClAaQM3u+ntPCe3kbXwsjcettBpDYZ4AK5u6WU/ra0nnN/QXYSGMCSXITImAwddmIe94J26LnO7+I5s6o47n8Dozo3WbCVID8CxcO+IJm5w9YC6Lq4i0/fZpgcHVQFAopaLLe5887v6Tmkr61tb0sBdJLapqOKoQqt9DAfCjXDmlDYyOBburS0VwtUVUXHorIzWchcJ2viIhzaUft7RZ1JrzzcDnQMktjyOCfs/VKTaBjgqQCKE04Jby+BAuBHOdLevjOF/ZYCDbjfAAQ/fnfwdxjRzn9fFd2pbz/cbuXav6YQ7JQBk3GMXXUjVJuAEuAIOgVvgnCltZXDUmGZucJqnWAAHVmb1KhUcZMXgBTcRv6GbXbeajhhjwwsLuvphVPVBY9c3ApwaeYg87Pn40ZBZqh+NCqKaqGyPACdUHNWHE+AKOARugXPcRQI4ylwVNxs4ClcY9xmMquq72nWp4fheA+nkNp5fd/Nd2N3v8w7en7SUDW/k2q+2BEnNZKIgF1t4TcjnFFbCNA6MhKkwGGZ38XdEFVARVAeVQtVQQVQTle1awxEVR/XhBOZUgen+hbMcbLlejoK6bnatfcToVAbVl45q6o6f15zOPt/28Puqs/eM9l64H3/U3P3Dxm7v1nfBeK1ngFNHf4dW3mKM5zFkq+Fs6+to4+UgQM+MppKK+BIhz8mWa2/DxS9TyONg5M8i/uESTCRBAGIQRhZkRHYogaqaEluohXKYhA6/Z4AzCh1c32V4YzeYgXEVTIJhMA9GwlQYDLPfCHSCPCqC6qBSqBpRJhNJpoOjVJ/Z8bloPDQbEFDHVdhUZo/xWucajr0CnfvXkWA8j4c9NNj4lh6ftJIBQ2iq6W090XizOnh/2dF7difvOV18MPJHQ9IBl2AiCQIQgzCyICOyQwlUjW3mDrVQjp4AQ8XONRxQaBOZfV1XIcyQidXgg2GlGs9wgSoPDob7t0qbZwVHWZvPguSt4LCgxi5rVa3gKKvHLEjeCg4LauyyVtUKjrJ6zILkreCwoMYua1Wt4CirxyxI3goOC2rsslbVdOAoa8lWecZ7wAoOxjeR+Qy0gsN8vmd8yVZwML6JzGegFRzm8z3jS7aCg/FNZD4D/w8AAP//7Fnf6gAAAAZJREFUAwDA+34LX9CUqQAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito:wght@700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: one fixed 1200x800 stage, scaled to fit any iPad in landscape. Calm classroom palette; one hue per water-cycle stage. */
+:root{
+  --ground:#E9EEF3; --paper:#FFFFFF; --ink:#1B2836; --ink-2:#3B4B5D; --ink-3:#596A7D; --line:#D2DBE4;
+  --accent:#1D5E8C; --accent-soft:#DCE8F2; --ok:#2B7A4B; --ok-soft:#DDF0E3; --focus:#E07A00; --ctl:#2C3E52;
+  /* stage hues: evaporation warm yellow, condensation lavender, precipitation grey-blue, collection deep green-blue */
+  --e-hl:#F8DC8B; --c-hl:#DCD0F6; --p-hl:#CAD6E3; --l-hl:#A8D7D7; --n-hl:#CFE4F5;
+  --n-ink:#24557A; --n-bg:#E2EDF5;
+  --drip:#2F9BEF; --drip-ink:#0B2F4E;
+  --f-ui:"Atkinson Hyperlegible", -apple-system, "Segoe UI", system-ui, sans-serif;
+  --f-kid:"Nunito", ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif;
+  --f-book:"Source Serif 4", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--ground)}
+html{position:fixed;inset:0}
+body{position:fixed;inset:0;font-family:var(--f-ui);color:var(--ink);-webkit-text-size-adjust:100%;touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input{-webkit-user-select:text;user-select:text;font-family:var(--f-kid)}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation;-webkit-appearance:none;appearance:none}
+:focus{outline:none}
+:focus-visible{outline:4px solid var(--focus);outline-offset:3px}
+[hidden]{display:none!important}
+#safe{position:fixed;visibility:hidden;pointer-events:none;left:0;top:0;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+#app{position:absolute;left:0;top:0;width:1200px;height:800px;transform-origin:0 0;overflow:hidden;background:var(--ground)}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+
+/* ---------- top bar ---------- */
+.top{position:absolute;left:0;top:0;width:1200px;height:60px;display:flex;align-items:center;gap:12px;padding:0 16px;background:var(--paper);border-bottom:1px solid var(--line);z-index:20}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;white-space:nowrap}
+.brand svg{width:26px;height:26px}
+.brand em{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.steps{display:flex;gap:6px;margin-left:auto}
+.steps button{height:44px;padding:0 14px 0 8px;border-radius:22px;border:1px solid var(--line);background:var(--paper);display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.steps .n{width:28px;height:28px;border-radius:50%;background:var(--ground);display:grid;place-items:center;font-size:13px;font-variant-numeric:tabular-nums}
+.steps button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.steps button.on .n{background:rgba(255,255,255,.22)}
+.steps button.done .n{background:var(--ok-soft);color:var(--ok)}
+.iconbtn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;flex:none}
+.iconbtn svg{width:24px;height:24px}
+
+/* ---------- screens ---------- */
+.screen{position:absolute;left:0;top:60px;width:1200px;height:740px;padding:12px 16px;display:none}
+.screen.on{display:block;animation:fadein .45s ease}
+#s-start{top:0;height:800px;padding:0}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+h1,h2,h3{text-wrap:balance}
+h2.t{font-size:26px;line-height:1.15;margin:4px 0 6px}
+p.lead{font-size:16px;line-height:1.4;color:var(--ink-2);margin:0;max-width:62ch}
+.btn{height:56px;padding:0 24px;border-radius:14px;border:2px solid var(--accent);background:var(--paper);color:var(--accent);font-weight:700;font-size:18px;display:inline-flex;align-items:center;justify-content:center;gap:10px;white-space:nowrap}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.okb{background:var(--ok);border-color:var(--ok);color:#fff}
+.btn:active{transform:scale(.98)}
+.btn:disabled{opacity:.4}
+.btn svg{width:24px;height:24px;flex:none}
+.foot{display:flex;align-items:center;gap:12px}
+.foot .count{margin-right:auto;font-size:14px;color:var(--ink-3);font-weight:700}
+.tag{display:inline-flex;align-items:center;height:24px;padding:0 10px;border-radius:12px;font-size:13px;font-weight:700;background:var(--c,var(--ground));color:var(--i,var(--ink-2));white-space:nowrap}
+.pre{opacity:0}
+
+/* ---------- start ---------- */
+.start{display:grid;grid-template-columns:540px 1fr;gap:40px;align-items:center;height:100%;padding:40px 56px}
+.start h1{font-family:var(--f-kid);font-weight:900;font-size:46px;line-height:1.05;margin:14px 0 18px;color:var(--ink)}
+.start p{font-size:20px;line-height:1.45;color:var(--ink-2);margin:0 0 30px}
+.bigstart{height:96px;min-width:280px;padding:0 44px;border-radius:48px;border:0;background:var(--accent);color:#fff;font-family:var(--f-kid);font-weight:900;font-size:36px;display:inline-flex;align-items:center;gap:16px;box-shadow:0 8px 0 #154766}
+.bigstart:active{transform:translateY(4px);box-shadow:0 4px 0 #154766}
+.bigstart svg{width:40px;height:40px}
+.start .meta{margin-top:26px;font-size:15px;color:var(--ink-3);font-weight:700}
+.start-art{height:540px;border-radius:28px;overflow:hidden;background:var(--n-bg);border:1px solid var(--line);position:relative}
+.start-art svg{position:absolute;inset:0;width:100%;height:100%}
+
+/* ---------- textbook page ---------- */
+.a1{display:grid;grid-template-columns:588px 1fr;gap:16px;height:100%}
+.bookwrap{position:relative;overflow:hidden}
+.page{position:absolute;left:0;top:0;width:640px;transform-origin:0 0;background:#FDFDFC;border:1px solid #CFD6DD;box-shadow:0 2px 0 #C9D1D9,0 10px 24px rgba(27,40,54,.12);font-family:var(--f-book);font-size:12.5px;line-height:1.5;color:#232A31;padding:30px 36px 22px}
+.pg-head{display:flex;justify-content:space-between;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#69737E;border-bottom:1px solid #C9CFD6;padding-bottom:6px}
+.pg-title{font-family:var(--f-ui);font-weight:700;font-size:25px;color:#1E4C73;margin:12px 0 10px;line-height:1.1}
+.pg-title small{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#4D7393;margin-bottom:3px}
+.pg-boxes{display:grid;grid-template-columns:1.25fr 1fr;gap:10px;margin-bottom:10px}
+.pg-box{border:1px solid #BFD3E4;background:#F3F8FC;padding:7px 10px;font-size:11.5px;line-height:1.4}
+.pg-box b{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#1E4C73;margin-bottom:2px}
+.pg-box ul{margin:0;padding-left:15px}
+.pg-cols{columns:2;column-gap:22px}
+.pg-cols h4{font-family:var(--f-ui);font-size:13.5px;color:#1E4C73;margin:6px 0 2px;break-after:avoid}
+.pg-cols p{margin:0 0 6px;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.pg-fig{margin:4px 0 8px;break-inside:avoid;border:1px solid #D5DDE5;background:#F7FAFC;padding:6px}
+.pg-fig svg{display:block;width:100%;height:auto}
+.pg-fig figcaption{font-size:10.5px;line-height:1.35;margin-top:4px;color:#3F4852}
+.pg-review{border-top:2px solid #1E4C73;margin-top:6px;padding-top:6px;font-size:11.5px}
+.pg-review b{font-family:var(--f-ui);color:#1E4C73}
+.pg-review ol{margin:3px 0 0;padding-left:18px;columns:1}
+.pg-foot{margin-top:8px;font-size:10px;color:#77818B;font-style:italic;display:flex;justify-content:space-between}
+.src{border-radius:2px;transition:background-color .7s ease;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.page.hl-N .src[data-st="N"]{background:var(--n-hl)}
+.page.hl-E .src[data-st="E"]{background:var(--e-hl)}
+.page.hl-C .src[data-st="C"]{background:var(--c-hl)}
+.page.hl-P .src[data-st="P"]{background:var(--p-hl)}
+.page.hl-L .src[data-st="L"]{background:var(--l-hl)}
+
+/* ---------- blueprint panel ---------- */
+.bp{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px 14px;min-height:0}
+.pipe{display:flex;gap:6px;margin:12px 0 12px}
+.pipe span{flex:1;height:32px;border-radius:8px;background:var(--ground);font-size:13px;font-weight:700;color:var(--ink-3);display:grid;place-items:center;transition:background-color .4s,color .4s;white-space:nowrap}
+.pipe span.done{background:var(--accent-soft);color:var(--accent)}
+.pipe span.on{background:var(--accent);color:#fff}
+.bp-body{flex:1;position:relative;min-height:0}
+.view{position:absolute;inset:0;display:none}
+.view.on{display:block}
+.bp .foot{padding-top:12px}
+.facts{display:grid;grid-template-columns:120px 1fr;gap:12px 14px;margin:6px 0 0;font-size:16px;line-height:1.4}
+.facts dt{font-weight:700;color:var(--ink-3);font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.facts dd{margin:0}
+.rule{margin-top:22px;padding:14px 16px;border-radius:14px;background:var(--ok-soft);color:#1E5636;font-size:16px;line-height:1.4;display:flex;gap:12px;align-items:flex-start}
+.rule svg{width:28px;height:28px;flex:none}
+.legend{display:flex;flex-direction:column;gap:8px}
+.lrow{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:9px 12px;border:1px solid var(--line);border-radius:12px;transition:opacity .5s}
+.lsw{width:44px;height:30px;border-radius:7px;background:var(--c);border:2px solid var(--b)}
+.lrow b{font-size:17px}
+.lrow small{display:block;font-family:var(--f-book);font-size:13px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:330px}
+.lrow .cnt{font-size:14px;font-weight:700;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.note{font-size:14px;line-height:1.4;color:var(--ink-3);margin:12px 2px 0}
+.plain{display:flex;flex-direction:column;gap:8px}
+.prow{border:1px solid var(--line);border-radius:12px;padding:9px 12px 10px;transition:opacity .5s}
+.prow .from{font-family:var(--f-book);font-size:13px;color:var(--ink-3);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:5px 0 3px}
+.prow .to{font-size:16px;line-height:1.35;margin:0;transition:opacity .5s}
+.board{display:grid;grid-template-columns:1fr 66px 1fr 66px;gap:12px 8px}
+.scard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper);transform-origin:0 0}
+.sthumb{height:92px;position:relative}
+.sthumb svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.sc-meta{padding:7px 10px 9px}
+.sc-kw{display:block;font-family:var(--f-kid);font-size:19px;font-weight:800;margin:3px 0 1px}
+.sc-nar{font-size:13px;line-height:1.3;color:var(--ink-2);margin:0}
+.cslot{border:2px dashed var(--line);border-radius:12px;display:flex}
+.ccard{flex:1;border-radius:10px;background:var(--c);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:6px 4px}
+.cq{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--i);font-weight:800;font-size:20px;display:grid;place-items:center;border:2px solid var(--i)}
+.cl{font-size:12px;font-weight:700;color:var(--i)}
+.ccard svg{width:30px;height:30px;background:#fff;border-radius:7px;padding:2px}
+.ccard svg.ok{box-shadow:0 0 0 3px var(--ok)}
+.ghost{position:absolute;z-index:50;border-radius:6px;padding:4px 8px;font-family:var(--f-book);font-size:13px;line-height:1.4;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 6px 18px rgba(27,40,54,.18);pointer-events:none}
+
+/* ---------- act 2 ---------- */
+.a2{display:flex;flex-direction:column;gap:12px;height:100%}
+.a2-top{display:grid;grid-template-columns:1fr 610px;gap:18px;min-height:104px}
+.a2-top p.lead{font-size:15px}
+.strip{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:8px 12px;display:flex;align-items:center;gap:12px}
+.strip-label{font-size:12px;font-weight:700;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;width:76px;line-height:1.3;flex:none}
+.strip-cards{display:flex;align-items:center;gap:6px}
+.mthumb{width:100px}
+.mthumb .tb{height:62px;border-radius:8px;overflow:hidden;position:relative;border:1px solid var(--line)}
+.mthumb .tb svg{position:absolute;inset:0;width:100%;height:100%}
+.mthumb b{display:block;font-family:var(--f-kid);font-size:13px;margin-top:3px;text-align:center}
+.qdot{width:22px;height:22px;border-radius:50%;background:var(--ground);color:var(--ink-2);font-weight:800;font-size:13px;display:grid;place-items:center;flex:none}
+.lanes{display:flex;flex-direction:column;gap:10px}
+.lane{height:230px;display:grid;grid-template-columns:300px 56px 1fr;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:12px}
+.slot,.out{border:2px dashed var(--line);border-radius:14px;position:relative;display:flex;align-items:center;justify-content:center;color:var(--ink-3);font-weight:700;font-size:15px}
+.slot.full,.out.full{border-color:transparent}
+.slot .ph,.out .ph{position:absolute}
+.slot.full .ph,.out.full .ph{display:none}
+.pcard{position:absolute;inset:0;border-radius:14px;background:var(--pc);padding:12px 14px;color:var(--ink);display:flex;flex-direction:column;gap:8px}
+.pc-top{display:flex;align-items:center;gap:10px}
+.pc-top .av{width:44px;height:44px;font-size:20px}
+.pc-top b{font-size:20px;display:block}
+.pc-top small{font-size:13px;color:var(--ink-2)}
+.pc-doc{margin-left:auto;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#fff;border-radius:6px;padding:3px 7px;color:var(--ink-2)}
+.pc-tags{display:flex;flex-wrap:wrap;gap:5px}
+.pc-tags span{background:rgba(255,255,255,.85);border-radius:8px;padding:4px 8px;font-size:13px;font-weight:700}
+.pc-lbl{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.plug{position:relative}
+.plug svg{position:absolute;inset:0;width:100%;height:100%}
+.plug path{stroke-dasharray:80;stroke-dashoffset:80;transition:stroke-dashoffset .7s ease}
+.plug.on path{stroke-dashoffset:0}
+.plug circle{opacity:0;transition:opacity .4s .5s}
+.plug.on circle{opacity:1}
+.out{justify-content:flex-start;padding:0;gap:16px}
+.outin{position:absolute;inset:0;display:flex;gap:16px;align-items:stretch}
+.mini{width:352px;flex:none;border-radius:14px;border:2px solid var(--ink-3);background:#fff;display:flex;flex-direction:column;overflow:hidden}
+.mini-bar{height:24px;display:flex;align-items:center;justify-content:space-between;padding:0 8px;font-size:11.5px;font-weight:700;color:var(--ink-3);border-bottom:1px solid var(--line)}
+.mini-bar svg{width:16px;height:16px}
+.mini-th{flex:1;position:relative}
+.mini-th svg{position:absolute;inset:0;width:100%;height:100%}
+.mini-cap{height:44px;padding:4px 10px;display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);font-family:var(--f-kid);background:#fff}
+.mini-cap b{font-size:15px;font-weight:900}
+.mini-cap span{font-size:11px;line-height:1.25;font-weight:700;color:var(--ink-2)}
+.mini-cap.big b{font-size:26px;flex:1;text-align:center}
+.mini-ctrl{height:30px;display:flex;gap:5px;padding:3px 6px 5px;background:#fff}
+.mini-ctrl i{flex:1;border:1.5px solid var(--ctl);border-radius:7px;display:grid;place-items:center}
+.mini-ctrl svg{width:18px;height:18px}
+.chips{list-style:none;margin:0;padding:4px 0;display:flex;flex-direction:column;gap:6px;justify-content:center;flex:1;min-width:0}
+.chips li{display:flex;align-items:center;gap:10px;height:32px;padding:0 12px;border-radius:10px;background:var(--ground);font-size:15px;font-weight:700;color:var(--ink);transition:opacity .4s}
+.chips svg{width:22px;height:22px;flex:none}
+.a2 .foot{margin-top:auto}
+.fid{display:flex;gap:8px;flex-wrap:wrap;margin-right:auto}
+.fid span{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:18px;background:var(--ok-soft);color:#1E5636;font-weight:700;font-size:14.5px}
+.fid svg{width:18px;height:18px}
+
+/* ---------- review + summary ---------- */
+.rv{display:grid;grid-template-rows:auto 1fr auto;gap:12px;height:100%}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;min-height:0}
+.rcol{background:var(--paper);border:1px solid var(--line);border-radius:18px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.rhead{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}
+.rhead .av{width:42px;height:42px;font-size:19px}
+.rhead b{font-size:19px;display:block}
+.rhead small{font-size:13.5px;color:var(--ink-3)}
+.rhead .tags{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:260px}
+.rlist{-webkit-mask-image:linear-gradient(#000 85%,transparent);mask-image:linear-gradient(#000 85%,transparent);padding-bottom:40px!important;flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;margin:0;padding:4px 16px;list-style:none;touch-action:pan-y}
+.sr{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.38}
+.sr:last-child{border-bottom:0}
+.sr-n{width:28px;height:28px;border-radius:50%;background:var(--ground);display:grid;place-items:center;font-weight:700;font-size:13px;font-variant-numeric:tabular-nums}
+.sr.ckrow .sr-n{background:var(--accent);color:#fff}
+.sr-top{display:flex;align-items:center;gap:8px;margin-bottom:3px}
+.sr-top b{font-family:var(--f-kid);font-size:17px}
+.sr p{margin:2px 0}
+.sr .muted{color:var(--ink-3)}
+.sr .srcq{font-family:var(--f-book);font-size:13.5px;color:var(--ink-3)}
+.sr .srcq mark{background:var(--c);color:var(--ink);padding:0 2px;border-radius:2px}
+.sr .ok{color:var(--ok);font-weight:700}
+.rfoot{padding:12px 16px;border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;min-height:80px}
+.rfoot .st{font-size:15px;color:var(--ink-3);font-weight:700}
+.rfoot .st.okt{color:var(--ok)}
+.rv-foot{display:flex;align-items:center;gap:12px}
+.rv-foot .msg{margin-right:auto;font-size:15px;font-weight:700;color:var(--ink-3)}
+.sum{padding:14px 16px;display:flex;flex-direction:column;gap:12px;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;flex:1}
+.pill{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:14px;font-size:13.5px;font-weight:700;background:var(--ground);color:var(--ink-2);margin-left:auto}
+.pill.fin{background:var(--ok-soft);color:var(--ok)}
+.pill.prog{background:var(--accent-soft);color:var(--accent)}
+.stg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.stg div{border-radius:12px;padding:8px 6px;background:var(--ground);display:flex;flex-direction:column;align-items:center;gap:4px;font-weight:700;font-size:13.5px;color:var(--ink-3);text-align:center}
+.stg div.done{background:var(--c);color:var(--i)}
+.stg svg{width:26px;height:26px;flex:none}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.metric{border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.metric b{display:block;font-size:26px;font-variant-numeric:tabular-nums;line-height:1.1}
+.metric span{font-size:13.5px;color:var(--ink-3);font-weight:700}
+.obs{margin:0;padding-left:20px;font-size:15px;line-height:1.45}
+.obs li{margin:2px 0}
+.sum h4{margin:0;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+
+/* ---------- close ---------- */
+.close{display:grid;grid-template-columns:1fr 430px;gap:40px;align-items:center;height:100%;padding:30px 50px}
+.close h1{font-family:var(--f-kid);font-weight:900;font-size:56px;line-height:1.05;margin:10px 0 16px}
+.close h1 span{display:block}
+.close h1 .c2{color:var(--accent)}
+.close .sub{font-size:24px;line-height:1.35;color:var(--ink-2);margin:0 0 28px;max-width:30ch}
+.proof{list-style:none;margin:0 0 30px;padding:0;display:flex;flex-direction:column;gap:12px}
+.proof li{display:flex;gap:12px;align-items:center;font-size:17px;line-height:1.35}
+.proof svg{width:34px;height:34px;flex:none}
+.close-art{height:460px;border-radius:215px 215px 28px 28px;background:var(--n-bg);border:1px solid var(--line);position:relative;overflow:hidden}
+.close-art svg{position:absolute;inset:0;width:100%;height:100%}
+
+/* ---------- Drip ---------- */
+.drip .d-body{fill:var(--drip);stroke:var(--drip-ink);stroke-width:5;stroke-linejoin:round;transition:fill .8s,fill-opacity .8s,stroke-opacity .8s}
+.drip[data-form="vapor"] .d-body{fill-opacity:.32;stroke-dasharray:10 9;stroke-opacity:.75}
+.drip .d-shine{fill:#fff;opacity:.55}
+.drip[data-form="vapor"] .d-shine{opacity:.15}
+.drip .d-white{fill:#fff;stroke:var(--drip-ink);stroke-width:3}
+.drip .d-pupil{fill:var(--drip-ink)}
+.drip .d-glint{fill:#fff}
+.drip .d-line,.drip .d-line path{fill:none;stroke:var(--drip-ink);stroke-width:4;stroke-linecap:round}
+.drip .m-big,.drip .m-o{fill:var(--drip-ink)}
+.drip .d-cheeks ellipse{fill:#F28B82;opacity:.75}
+.drip .d-cheeks,.drip .d-ec,.drip .d-brow,.drip .d-m{display:none}
+.drip[data-mood="happy"] .m-happy,
+.drip[data-mood="warm"] .m-happy,.drip[data-mood="warm"] .d-cheeks,
+.drip[data-mood="cold"] .m-wavy,.drip[data-mood="cold"] .d-brow,
+.drip[data-mood="surprised"] .m-o,
+.drip[data-mood="big"] .m-big,.drip[data-mood="big"] .d-cheeks,
+.drip[data-mood="calm"] .m-calm,
+.drip[data-mood="sleepy"] .m-calm,.drip[data-mood="sleepy"] .d-ec{display:inline}
+.drip[data-mood="sleepy"] .d-eo{display:none}
+.drip[data-mood="cold"] .d-body{fill:#86C3F2}
+.s-bg{transition:fill 1.2s ease}
+.scene.sparse .deco{display:none}
+.scene.sparse .s-ground{fill:#B7CBAE}
+
+/* ---------- lesson player ---------- */
+.ls{display:flex;flex-direction:column;height:100%;gap:10px}
+.ls-top{display:flex;align-items:center;gap:12px;height:58px;flex:none}
+.seg{display:flex;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:4px;gap:4px}
+.seg button{height:48px;padding:0 20px;border-radius:12px;border:0;background:transparent;font-weight:700;font-size:17px;color:var(--ink-2);display:flex;align-items:center;gap:8px}
+.seg button .av{width:28px;height:28px;font-size:14px}
+.seg button.on{background:var(--accent);color:#fff}
+.ls-top .hint{font-size:14px;color:var(--ink-3);font-weight:700;margin-left:6px}
+.ls-top .btn{margin-left:auto}
+.players{flex:1;display:grid;gap:16px;min-height:0}
+.players.side{grid-template-columns:1fr 1fr}
+.players.m-maya #pl-jordan,.players.m-jordan #pl-maya{display:none}
+.av{width:36px;height:36px;border-radius:50%;color:#fff;display:grid;place-items:center;font-weight:700;flex:none}
+.player{position:relative;display:grid;grid-template-rows:60px minmax(0,1fr) 108px;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;min-height:0;min-width:0;--tint:var(--n-bg);--sink:var(--n-ink)}
+.pl-head{display:flex;align-items:center;gap:12px;padding:0 12px 0 14px;border-bottom:1px solid var(--line);min-width:0}
+.pl-who{display:flex;align-items:center;gap:8px;font-weight:700;font-size:18px}
+.sched{display:flex;gap:7px;list-style:none;margin:0 auto;padding:0}
+.sched li{width:38px;height:38px;border-radius:50%;background:var(--ground);display:grid;place-items:center;position:relative;border:3px solid transparent}
+.sched li svg{width:24px;height:24px}
+.sched li.cur{border-color:var(--ink);background:#fff}
+.sched li .tick{position:absolute;right:-6px;bottom:-6px;width:19px;height:19px;display:none}
+.sched li.done .tick{display:block}
+.pl-sound{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--ink-3);white-space:nowrap}
+.pl-sound svg{width:22px;height:22px}
+.pl-src{height:44px;padding:0 12px;border-radius:12px;border:1px solid var(--line);background:#fff;display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;color:var(--ink-2)}
+.pl-src svg{width:24px;height:24px}
+.pl-main{position:relative;display:flex;flex-direction:column;min-height:0;background:var(--tint);transition:background-color 1.2s ease}
+.pl-stage{flex:1;min-height:0;position:relative}
+.pl-stage svg{position:absolute;inset:0;width:100%;height:100%}
+.pl-cap{min-height:96px;padding:10px 18px 12px 20px;display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.82);border-top:1px solid rgba(27,40,54,.08)}
+.kw{font-family:var(--f-kid);font-weight:900;font-size:32px;line-height:1.05;color:var(--sink);flex:none;max-width:40%}
+.sent{font-family:var(--f-kid);font-weight:700;font-size:22px;line-height:1.3;color:var(--ink);flex:1;min-width:0}
+.player.no-sent .kw{font-size:60px;flex:1;max-width:none;text-align:center}
+.player.no-sent .sent{display:none}
+.cue{font-size:14px;font-weight:700;color:var(--ink-2);display:flex;align-items:center;gap:6px;white-space:nowrap;opacity:0;transition:opacity .8s;flex:none}
+.cue.on{opacity:1}
+.cue svg{width:28px;height:28px}
+.pl-ctrl{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 12px;border-top:1px solid var(--line);background:var(--paper)}
+.cbtn{border-radius:20px;border:3px solid var(--ctl);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-family:var(--f-kid);font-weight:800;font-size:20px;color:var(--ink);height:88px;min-width:0;padding:0}
+.cbtn svg{width:46px;height:46px}
+.cbtn:active{background:var(--ground);transform:scale(.97)}
+.cbtn[aria-disabled="true"]{opacity:.35}
+.cbtn[aria-disabled="true"]:active{transform:none;background:#fff}
+.ov{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;background:#FBFCFD}
+.ov-src{background:rgba(27,40,54,.28)}
+.ov-q,.ov-src{z-index:4}
+.ov-full{z-index:8;background:var(--tint)}
+.ck{display:flex;flex-direction:column;align-items:center;gap:14px;padding:14px;width:100%}
+.ck-q{display:flex;align-items:center;gap:14px;max-width:92%}
+.ck-q svg{width:60px;height:72px;flex:none}
+.ck-text{font-family:var(--f-kid);font-weight:800;font-size:28px;margin:0;line-height:1.2}
+.ck-choices{display:flex;gap:18px;justify-content:center}
+.choice{width:210px;height:200px;border-radius:24px;border:4px solid var(--ctl);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:var(--f-kid);font-weight:800;font-size:26px;position:relative;transition:opacity .5s,box-shadow .5s,border-color .5s}
+.choice svg{width:118px;height:118px}
+.ck-choices.n2 .choice{width:260px;height:240px;font-size:32px}
+.ck-choices.n2 .choice svg{width:156px;height:156px}
+.choice:active{transform:scale(.97)}
+.choice.is-out{opacity:.25}
+.choice.is-guide{border-color:var(--ok);box-shadow:0 0 0 8px rgba(43,122,75,.25)}
+.typer{display:flex;gap:10px;align-items:center}
+.typer label{font-size:16px;font-weight:700;color:var(--ink-2)}
+.typer input{height:56px;width:250px;border-radius:14px;border:3px solid var(--ctl);padding:0 14px;font-size:22px;font-weight:700;color:var(--ink);background:#fff}
+.typer .btn{height:56px}
+.ck-row{display:flex;gap:12px;align-items:center}
+.ck-note{font-size:16px;color:var(--ink-3);margin:0;font-weight:700;text-align:center}
+.ck-msg{min-height:24px;font-size:18px;color:var(--ink-2);font-weight:700;margin:0;text-align:center}
+.yay,.oops,.endc{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:16px}
+.yay svg.big,.oops svg.big,.endc svg.big{width:130px;height:150px}
+.stars{display:flex;gap:18px;height:50px}
+.stars svg{width:50px;height:50px;opacity:0;animation:soft 1.4s ease forwards}
+.stars svg:nth-child(2){animation-delay:.7s}
+.stars svg:nth-child(3){animation-delay:1.4s}
+@keyframes soft{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+.say{font-family:var(--f-kid);font-weight:800;font-size:30px;margin:0;line-height:1.25;max-width:24ch;text-wrap:balance}
+.next{font-size:17px;font-weight:700;color:var(--ink-2);display:flex;align-items:center;gap:8px;margin:4px 0 0}
+.next svg{width:30px;height:30px}
+.endrow{display:flex;gap:10px}
+.endrow span{width:56px;height:56px;border-radius:50%;background:#fff;border:3px solid var(--ok);display:grid;place-items:center}
+.endrow svg{width:34px;height:34px}
+.bigbtn{height:76px;padding:0 34px;border-radius:38px;border:0;background:var(--accent);color:#fff;font-family:var(--f-kid);font-weight:900;font-size:28px;display:inline-flex;align-items:center;gap:12px}
+.bigbtn svg{width:36px;height:36px}
+.bigbtn.soft{background:#fff;color:var(--accent);border:3px solid var(--ctl)}
+.bigbtn:active{transform:scale(.97)}
+.qs{width:100%;height:100%;display:flex;flex-direction:column;padding:14px 16px;gap:10px;background:#fff}
+.qs-head{display:flex;align-items:center;gap:12px}
+.qs-head svg{width:40px;height:40px}
+.qs-head b{font-family:var(--f-kid);font-size:24px;font-weight:900;margin-right:auto}
+.qs-ans{min-height:104px;border-radius:16px;background:var(--tint);display:flex;align-items:center;gap:16px;padding:10px 16px}
+.qs-ans svg{width:80px;height:80px;flex:none}
+.qs-ans p{font-family:var(--f-kid);font-weight:800;font-size:23px;line-height:1.3;margin:0}
+.qs-ans p.empty{color:var(--ink-3);font-size:19px}
+.qs-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.qt{min-height:80px;border-radius:16px;border:3px solid var(--ctl);background:#fff;display:flex;align-items:center;gap:12px;padding:8px 14px;text-align:left;font-family:var(--f-kid);font-weight:800;font-size:19px;line-height:1.2}
+.qt svg{width:52px;height:52px;flex:none}
+.qt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.qt:active{transform:scale(.98)}
+.srcs{max-width:620px;width:92%;padding:22px 24px;background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:0 12px 30px rgba(27,40,54,.16);display:flex;flex-direction:column;gap:10px}
+.srcs .h{display:flex;align-items:center;gap:10px}
+.srcs .h svg{width:34px;height:34px}
+.srcs .h b{font-size:19px}
+.srcs blockquote{margin:4px 0;font-family:var(--f-book);font-size:21px;line-height:1.55;color:var(--ink)}
+.srcs mark{background:var(--c);color:var(--ink);padding:1px 3px;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.srcs .meta{font-size:14px;color:var(--ink-3);font-weight:700}
+.srcs .now{font-size:15px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:10px}
+.srcs .btn{align-self:flex-end}
+.splash{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;height:100%;text-align:center;padding:16px}
+.splash svg.big{width:120px;height:140px}
+.splash h3{font-family:var(--f-kid);font-weight:900;font-size:40px;margin:0}
+.splash p{font-size:21px;margin:0;color:var(--ink-2);font-family:var(--f-kid);font-weight:700}
+.sp-sched{display:flex;gap:10px;margin:6px 0 10px}
+.sp-sched span{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;border:2px solid var(--line)}
+.sp-sched svg{width:34px;height:34px}
+.wait{display:flex;flex-direction:column;align-items:center;gap:12px;padding:16px 20px;border-radius:16px;background:#fff;border:1px solid var(--line)}
+.wait b{font-size:18px}
+.wait span{font-size:15px;color:var(--ink-3)}
+.brk{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding:16px}
+.breathe{width:210px;height:210px;border-radius:50%;background:#E3DAF6;display:grid;place-items:center;animation:breathe 8s ease-in-out infinite}
+.breathe svg{width:110px;height:128px}
+@keyframes breathe{0%,100%{transform:scale(.86)}50%{transform:scale(1.04)}}
+.brk h3{font-family:var(--f-kid);font-weight:900;font-size:36px;margin:0}
+.brk p{font-family:var(--f-kid);font-weight:700;font-size:20px;margin:0;color:var(--ink-2);max-width:30ch}
+.timer{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink-3)}
+.offer{display:flex;gap:20px}
+.offer .choice{width:230px;height:210px}
+
+/* compact (side by side) */
+.players.side .kw{font-size:25px}
+.players.side .sent{font-size:17px}
+.players.side .no-sent .kw{font-size:44px}
+.players.side .pl-cap{min-height:84px;padding:8px 12px;gap:12px}
+.players.side .cbtn{font-size:17px;height:84px}
+.players.side .cbtn svg{width:38px;height:38px}
+.players.side .pl-sound span,.players.side .pl-src span,.players.side .pl-who span.nm{display:none}
+.players.side .sched{gap:4px}
+.players.side .sched li{width:34px;height:34px}
+.players.side .sched li svg{width:20px;height:20px}
+.players.side .cue span{display:none}
+.players.side .ck-text{font-size:22px}
+.players.side .ck-q svg{width:46px;height:56px}
+.players.side .choice{width:150px;height:150px;font-size:20px;border-radius:20px}
+.players.side .choice svg{width:84px;height:84px}
+.players.side .ck-choices{gap:12px}
+.players.side .ck-choices.n2 .choice{width:200px;height:190px;font-size:26px}
+.players.side .ck-choices.n2 .choice svg{width:116px;height:116px}
+.players.side .typer label{display:none}
+.players.side .typer input{width:200px}
+.players.side .say{font-size:24px}
+.players.side .yay svg.big,.players.side .oops svg.big,.players.side .endc svg.big{width:96px;height:112px}
+.players.side .qs-grid{grid-template-columns:1fr}
+.players.side .qt{min-height:60px;font-size:16px;padding:6px 10px}
+.players.side .qt svg{width:40px;height:40px}
+.players.side .qs-ans{min-height:84px}
+.players.side .qs-ans svg{width:60px;height:60px}
+.players.side .qs-ans p{font-size:18px}
+.players.side .srcs blockquote{font-size:17px}
+.players.side .breathe{width:160px;height:160px}
+.players.side .breathe svg{width:84px;height:98px}
+.players.side .offer .choice{width:180px;height:170px}
+.players.side .bigbtn{font-size:22px;height:66px;padding:0 24px}
+.players.side .splash h3{font-size:32px}
+.players.side .ck-listen .ck-note{display:none}
+
+#rotate{position:fixed;inset:0;z-index:100;background:var(--accent);color:#fff;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px;font-size:24px;font-weight:700;text-align:center;padding:30px}
+#rotate svg{width:90px;height:90px}
+@media (orientation:portrait) and (pointer:coarse){#rotate{display:flex}}
+@media (prefers-reduced-motion:reduce){
+  .screen.on,.stars svg,.breathe{animation:none!important}
+  .stars svg{opacity:1}
+  .s-bg,.pl-main,.src,.plug path,.drip .d-body{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div id="safe"></div>
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-sun" viewBox="0 0 100 100"><path d="M50 8v12M50 80v12M8 50h12M80 50h12M20 20l9 9M71 71l9 9M80 20l-9 9M29 71l-9 9" stroke="#D99A12" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="50" cy="50" r="22" fill="#F6C744" stroke="#8A5F00" stroke-width="4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 100 100"><path d="M62 12a38 38 0 1 0 26 64a31 31 0 1 1-26-64z" fill="#ECE5C4" stroke="#5E5741" stroke-width="4" stroke-linejoin="round"/><circle cx="36" cy="44" r="4" fill="#C9C0A0"/><circle cx="46" cy="66" r="5" fill="#C9C0A0"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 100 100"><path d="M12 50c10-17 32-24 50-14l22-13v54L62 64c-18 10-40 3-50-14z" fill="#F39B5A" stroke="#6E3510" stroke-width="4" stroke-linejoin="round"/><circle cx="29" cy="46" r="4.5" fill="#1B2836"/><path d="M44 40q6 10 0 20" stroke="#6E3510" stroke-width="3.5" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 100 100"><path d="M26 76c-11 0-19-8-19-18s8-17 17-17c2-13 12-21 25-21 12 0 21 8 24 18 11 0 19 8 19 19s-8 19-19 19z" fill="#FFFFFF" stroke="#4D5D74" stroke-width="4.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-flower" viewBox="0 0 100 100"><path d="M50 56v36" stroke="#3E8A4E" stroke-width="6" stroke-linecap="round"/><path d="M50 82c-11-1-18-8-20-17 11 0 18 6 20 17z" fill="#6DB56F" stroke="#2F6B3A" stroke-width="3"/><g fill="#F2A1BE" stroke="#8E3459" stroke-width="3"><circle cx="50" cy="22" r="11"/><circle cx="65" cy="33" r="11"/><circle cx="59" cy="50" r="11"/><circle cx="41" cy="50" r="11"/><circle cx="35" cy="33" r="11"/></g><circle cx="50" cy="37" r="9" fill="#F6C744" stroke="#8A5F00" stroke-width="3"/></symbol>
+  <symbol id="i-rain" viewBox="0 0 100 100"><path d="M26 56c-9 0-15-6-15-14s6-13 13-13c2-10 10-17 20-17 9 0 17 6 19 14 9 0 16 7 16 15s-7 15-16 15z" fill="#D5DEE9" stroke="#4D5D74" stroke-width="4" stroke-linejoin="round"/><g fill="#2F9BEF" stroke="#0B2F4E" stroke-width="3" stroke-linejoin="round"><path d="M30 64c-4 6-6 9-6 12a6 6 0 0 0 12 0c0-3-2-6-6-12z"/><path d="M52 70c-4 6-6 9-6 12a6 6 0 0 0 12 0c0-3-2-6-6-12z"/><path d="M72 62c-4 6-6 9-6 12a6 6 0 0 0 12 0c0-3-2-6-6-12z"/></g></symbol>
+  <symbol id="i-bird" viewBox="0 0 100 100"><path d="M14 58c10-5 20-3 28 4 5-15 18-24 34-24-3 4-5 8-5 12 7 0 11 3 13 7-8 0-12 2-16 8-9 13-28 15-41 6-6-4-10-8-13-13z" fill="#8FA3B8" stroke="#263646" stroke-width="4" stroke-linejoin="round"/><path d="M40 60c6-10 16-14 24-12-4 8-12 12-24 12z" fill="#6E8399" stroke="#263646" stroke-width="3" stroke-linejoin="round"/><circle cx="72" cy="46" r="3.5" fill="#1B2836"/><path d="M84 52l9 2-9 3z" fill="#F2B33D" stroke="#263646" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pond" viewBox="0 0 100 100"><path d="M14 60V34M21 58V42M86 60V38M80 58V46" stroke="#3E8A4E" stroke-width="5" stroke-linecap="round"/><ellipse cx="50" cy="66" rx="40" ry="17" fill="#5DA9D6" stroke="#1F5E7A" stroke-width="4"/><path d="M32 64q8-5 16 0M54 71q8-5 16 0" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 100 100"><rect x="44" y="56" width="12" height="34" rx="3" fill="#8A6B4E" stroke="#4E3826" stroke-width="3"/><circle cx="50" cy="40" r="27" fill="#7DB27A" stroke="#2F6B3A" stroke-width="4"/><circle cx="40" cy="34" r="5" fill="#9CC799"/></symbol>
+  <symbol id="i-drip" viewBox="0 0 100 100"><path d="M50 8c8 12 30 32 30 52a30 30 0 0 1-60 0c0-20 22-40 30-52z" fill="#2F9BEF" stroke="#0B2F4E" stroke-width="5" stroke-linejoin="round"/><circle cx="40" cy="58" r="5.5" fill="#0B2F4E"/><circle cx="60" cy="58" r="5.5" fill="#0B2F4E"/><path d="M41 73q9 7 18 0" stroke="#0B2F4E" stroke-width="4" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 100 100"><path d="M50 8l12.5 26 28 4-20.5 19.5 5 28L50 72 25 85.5l5-28L9.5 38l28-4z" fill="#F6C744" stroke="#8A5F00" stroke-width="4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-eyeoff" viewBox="0 0 100 100"><path d="M8 50c11-17 25-26 42-26s31 9 42 26c-11 17-25 26-42 26S19 67 8 50z" fill="#fff" stroke="#1B2836" stroke-width="5" stroke-linejoin="round"/><circle cx="50" cy="50" r="12" fill="#1B2836"/><path d="M18 84L82 16" stroke="#B23A2E" stroke-width="7" stroke-linecap="round"/></symbol>
+  <symbol id="i-house" viewBox="0 0 100 100"><path d="M24 44v42h52V44" fill="#F3D9B1" stroke="#1B2836" stroke-width="5" stroke-linejoin="round"/><path d="M14 48L50 18l36 30" fill="none" stroke="#1B2836" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><rect x="42" y="60" width="16" height="26" fill="#8A6B4E" stroke="#1B2836" stroke-width="3"/></symbol>
+  <symbol id="i-glass" viewBox="0 0 100 100"><path d="M28 16h44l-6 72H34z" fill="#E6F2FB" stroke="#1B2836" stroke-width="5" stroke-linejoin="round"/><path d="M32 38h36" stroke="#7FB8E0" stroke-width="4"/><g fill="#2F9BEF" stroke="#0B2F4E" stroke-width="2"><ellipse cx="18" cy="44" rx="4" ry="5.5"/><ellipse cx="82" cy="56" rx="4" ry="5.5"/><ellipse cx="20" cy="68" rx="4" ry="5.5"/></g></symbol>
+  <symbol id="i-snow" viewBox="0 0 100 100"><g stroke="#2F5F94" stroke-width="6" stroke-linecap="round" fill="none"><path d="M50 10v80M15 30l70 40M15 70l70-40"/><path d="M40 16l10 8 10-8M40 84l10-8 10 8"/></g></symbol>
+  <symbol id="i-heavy" viewBox="0 0 100 100"><circle cx="50" cy="24" r="10" fill="none" stroke="#1B2836" stroke-width="5"/><path d="M30 34h40l13 54H17z" fill="#8DA2BA" stroke="#1B2836" stroke-width="5" stroke-linejoin="round"/><path d="M50 50v22M41 64l9 9 9-9" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ground" viewBox="0 0 100 100"><rect x="10" y="40" width="80" height="48" rx="6" fill="#B08A64" stroke="#5A3F26" stroke-width="4"/><path d="M12 42h76" stroke="#5B9A4E" stroke-width="8" stroke-linecap="round"/><g fill="#2F9BEF" stroke="#0B2F4E" stroke-width="2"><ellipse cx="34" cy="62" rx="4" ry="5.5"/><ellipse cx="56" cy="74" rx="4" ry="5.5"/><ellipse cx="70" cy="58" rx="4" ry="5.5"/></g><path d="M50 10v18M42 22l8 8 8-8" stroke="#2F9BEF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-hill" viewBox="0 0 100 100"><path d="M6 86C28 86 40 32 70 26c10-2 18 2 24 6v54z" fill="#A7C49B" stroke="#3F6B37" stroke-width="4" stroke-linejoin="round"/><path d="M64 38q-16 16-28 38" stroke="#2F9BEF" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M28 68l7 10 10-6" stroke="#2F9BEF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-loop" viewBox="0 0 100 100"><g stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M76 40A28 28 0 0 0 26 34"/><path d="M16 26l10 9 11-6"/><path d="M24 60a28 28 0 0 0 50 6"/><path d="M84 74l-10-9-11 6"/></g></symbol>
+  <symbol id="i-teacher" viewBox="0 0 100 100"><rect x="56" y="18" width="38" height="28" rx="3" fill="#2F5D4A" stroke="#1B2836" stroke-width="3"/><path d="M62 28h22M62 36h14" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="34" cy="30" r="12" fill="#F2C9A5" stroke="#1B2836" stroke-width="4"/><path d="M12 90c0-24 9-38 22-38s22 14 22 38z" fill="#1D5E8C" stroke="#1B2836" stroke-width="4" stroke-linejoin="round"/><path d="M50 62l14-14" stroke="#1B2836" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 100 100"><path d="M58 64L74 22" stroke="#1B2836" stroke-width="15" stroke-linecap="round"/><path d="M58 64L74 22" stroke="#F2C9A5" stroke-width="8" stroke-linecap="round"/><circle cx="76" cy="17" r="10" fill="#F2C9A5" stroke="#1B2836" stroke-width="4"/><path d="M18 94c0-26 10-40 24-40s24 14 24 40z" fill="#F28C38" stroke="#1B2836" stroke-width="4" stroke-linejoin="round"/><circle cx="42" cy="34" r="14" fill="#F2C9A5" stroke="#1B2836" stroke-width="4"/><path d="M28 28c4-10 22-12 28 0" fill="#6B4226" stroke="#1B2836" stroke-width="3"/></symbol>
+  <symbol id="i-again" viewBox="0 0 100 100"><path d="M84 50A34 34 0 1 1 71 23" fill="none" stroke="#1D5E8C" stroke-width="7" stroke-linecap="round"/><path d="M80 30L72 13 61 28z" fill="#1D5E8C" stroke="#1D5E8C" stroke-width="3" stroke-linejoin="round"/><path d="M50 28c4 6 15 17 15 27a15 15 0 0 1-30 0c0-10 11-21 15-27z" fill="#2F9BEF" stroke="#0B2F4E" stroke-width="3.5" stroke-linejoin="round"/><circle cx="45" cy="55" r="2.8" fill="#0B2F4E"/><circle cx="55" cy="55" r="2.8" fill="#0B2F4E"/><path d="M45 62q5 4 10 0" stroke="#0B2F4E" stroke-width="2.5" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-thumb" viewBox="0 0 100 100"><rect x="12" y="46" width="18" height="42" rx="4" fill="#4E9E5C" stroke="#1B2836" stroke-width="4"/><path d="M34 46l14-24c3-6 12-4 12 3l-2 16h22c6 0 10 5 9 11l-5 26c-1 6-6 10-11 10H34z" fill="#8ED08F" stroke="#1B2836" stroke-width="4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#CBB8F0" stroke="#1B2836" stroke-width="4"/><rect x="34" y="32" width="9" height="22" rx="3" fill="#1B2836"/><rect x="57" y="32" width="9" height="22" rx="3" fill="#1B2836"/><path d="M38 68q12 8 24 0" stroke="#1B2836" stroke-width="4.5" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-book" viewBox="0 0 100 100"><path d="M10 22c13-5 27-4 40 4v60c-13-8-27-9-40-4z" fill="#fff" stroke="#1B2836" stroke-width="5" stroke-linejoin="round"/><path d="M90 22c-13-5-27-4-40 4v60c13-8 27-9 40-4z" fill="#fff" stroke="#1B2836" stroke-width="5" stroke-linejoin="round"/><path d="M20 38h20M20 50h20M60 38h20M60 50h14" stroke="#F2C14E" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="i-speaker" viewBox="0 0 100 100"><path d="M12 38h16l22-18v60L28 62H12z" fill="#1B2836" stroke="#1B2836" stroke-width="3" stroke-linejoin="round"/><path d="M62 36q8 14 0 28M74 26q15 24 0 48" stroke="#1B2836" stroke-width="6" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 100 100"><path d="M12 38h16l22-18v60L28 62H12z" fill="#1B2836" stroke="#1B2836" stroke-width="3" stroke-linejoin="round"/><path d="M62 38l24 24M86 38L62 62" stroke="#B23A2E" stroke-width="7" stroke-linecap="round"/></symbol>
+  <symbol id="i-aac" viewBox="0 0 100 100"><rect x="16" y="10" width="68" height="80" rx="10" fill="#fff" stroke="#1B2836" stroke-width="5"/><rect x="26" y="20" width="21" height="21" rx="4" fill="#F6C744" stroke="#1B2836" stroke-width="2.5"/><rect x="53" y="20" width="21" height="21" rx="4" fill="#7FC0F2" stroke="#1B2836" stroke-width="2.5"/><rect x="26" y="47" width="21" height="21" rx="4" fill="#8ED08F" stroke="#1B2836" stroke-width="2.5"/><rect x="53" y="47" width="21" height="21" rx="4" fill="#F2A1BE" stroke="#1B2836" stroke-width="2.5"/><path d="M34 79h32" stroke="#1B2836" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="i-text" viewBox="0 0 100 100"><rect x="12" y="14" width="76" height="72" rx="10" fill="#fff" stroke="#1B2836" stroke-width="5"/><path d="M26 34h48M26 50h48M26 66h30" stroke="#1D5E8C" stroke-width="6" stroke-linecap="round"/></symbol>
+  <symbol id="i-calm" viewBox="0 0 100 100"><path d="M50 12c20 13 32 32 27 52-5 19-28 26-42 13C22 64 28 37 50 12z" fill="#8ED08F" stroke="#2F6B3A" stroke-width="5" stroke-linejoin="round"/><path d="M50 30c-6 18-8 34-6 54" stroke="#2F6B3A" stroke-width="4" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 100 100"><path d="M40 62V20a8 8 0 0 1 16 0v28l17 4c7 2 10 8 9 14l-4 24H44L26 68c-3-5-2-10 3-12 4-2 8 0 11 6z" fill="#F2C9A5" stroke="#1B2836" stroke-width="4.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-word" viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="12" fill="#fff" stroke="#1B2836" stroke-width="5"/><text x="50" y="63" font-size="34" font-weight="900" text-anchor="middle" font-family="Nunito, ui-rounded, sans-serif" fill="#1D5E8C">Aa</text></symbol>
+  <symbol id="i-slow" viewBox="0 0 100 100"><circle cx="50" cy="52" r="36" fill="#fff" stroke="#1B2836" stroke-width="5"/><path d="M50 30v22l14 10" stroke="#1D5E8C" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 10h20" stroke="#1B2836" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="#2B7A4B" stroke="#fff" stroke-width="8"/><path d="M30 52l13 13 27-29" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 100 100"><path d="M30 16l56 34-56 34z" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-next" viewBox="0 0 100 100"><path d="M18 50h60M56 26l24 24-24 24" stroke="currentColor" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-back" viewBox="0 0 100 100"><path d="M82 50H22M44 26L20 50l24 24" stroke="currentColor" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 100 100"><path d="M16 48L50 20l34 28M26 42v40h48V42" stroke="#1B2836" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 100 100"><path d="M26 26l48 48M74 26L26 74" stroke="currentColor" stroke-width="11" stroke-linecap="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 100 100"><path d="M50 8l34 12v26c0 22-14 38-34 46C30 84 16 68 16 46V20z" fill="#DDF0E3" stroke="#2B7A4B" stroke-width="5" stroke-linejoin="round"/><path d="M34 50l11 11 21-23" stroke="#2B7A4B" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 100 100"><rect x="12" y="12" width="76" height="76" rx="12" fill="#fff" stroke="#1B2836" stroke-width="5"/><path d="M28 70V54M44 70V40M60 70V48M76 70V30" stroke="#1D5E8C" stroke-width="9" stroke-linecap="round"/></symbol>
+</svg>
+
+<div id="app">
+  <header class="top" id="top" hidden>
+    <div class="brand"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-drip" xlink:href="#i-drip"/></svg><span>Textbook to IEP lesson</span><em>Demo</em></div>
+    <nav class="steps" id="steps" aria-label="Demo sections"></nav>
+    <button class="iconbtn" type="button" data-go="start" aria-label="Back to the start screen"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-home" xlink:href="#i-home"/></svg></button>
+  </header>
+
+  <!-- START -->
+  <section class="screen" id="s-start" aria-label="Start">
+    <div class="start">
+      <div>
+        <div class="eyebrow">Special education · Interactive demo</div>
+        <h1>One textbook section.<br>A lesson for every IEP.</h1>
+        <p>Watch AI turn a middle school science passage into two personalized, interactive lessons. The curriculum stays exactly the same.</p>
+        <button class="bigstart" id="startBtn" type="button"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-play" xlink:href="#i-play"/></svg>Start</button>
+        <div class="meta">About 5 minutes · Turn sound on · Two fictional students</div>
+      </div>
+      <div class="start-art" id="startArt"></div>
+    </div>
+  </section>
+
+  <!-- ACT 1 -->
+  <section class="screen" id="s-act1" aria-label="Act 1, the blueprint">
+    <div class="a1">
+      <div class="bookwrap" id="bookwrap"><div class="page" id="page"></div></div>
+      <div class="bp">
+        <div class="eyebrow">Act 1 · The blueprint</div>
+        <h2 class="t" id="a1t"></h2>
+        <p class="lead" id="a1d"></p>
+        <div class="pipe" id="pipe"></div>
+        <div class="bp-body">
+          <div class="view" id="v-src"></div>
+          <div class="view" id="v-key"></div>
+          <div class="view" id="v-plain"></div>
+          <div class="view" id="v-board"></div>
+        </div>
+        <div class="foot">
+          <span class="count" id="a1c"></span>
+          <button class="btn" type="button" id="a1back"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-back" xlink:href="#i-back"/></svg>Back</button>
+          <button class="btn primary" type="button" id="a1next">Next<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-next" xlink:href="#i-next"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT 2 -->
+  <section class="screen" id="s-act2" aria-label="Act 2, the IEP layer">
+    <div class="a2">
+      <div class="a2-top">
+        <div>
+          <div class="eyebrow">Act 2 · The IEP layer</div>
+          <h2 class="t" id="a2t"></h2>
+          <p class="lead" id="a2d"></p>
+        </div>
+        <div class="strip"><div class="strip-label">Blueprint<br>from Act 1</div><div class="strip-cards" id="strip"></div></div>
+      </div>
+      <div class="lanes" id="lanes"></div>
+      <div class="foot">
+        <div class="fid" id="fid"></div>
+        <button class="btn" type="button" id="a2back"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-back" xlink:href="#i-back"/></svg>Back</button>
+        <button class="btn primary" type="button" id="a2next">Next<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-next" xlink:href="#i-next"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHER REVIEW -->
+  <section class="screen" id="s-review" aria-label="Teacher review">
+    <div class="rv">
+      <div>
+        <div class="eyebrow">Teacher view · Before the lesson</div>
+        <h2 class="t">Approve each script before students see it</h2>
+        <p class="lead">Every scene, narration line, and checkpoint is listed with the textbook sentence it comes from. Nothing reaches a student until a teacher approves it.</p>
+      </div>
+      <div class="cols" id="rvcols"></div>
+      <div class="rv-foot">
+        <span class="msg" id="rvmsg"></span>
+        <button class="btn" type="button" data-go="act2"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-back" xlink:href="#i-back"/></svg>Back</button>
+        <button class="btn primary" type="button" id="rvnext">Open the lessons<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-next" xlink:href="#i-next"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LESSONS -->
+  <section class="screen" id="s-lessons" aria-label="Act 3, the lessons">
+    <div class="ls">
+      <div class="ls-top">
+        <div class="seg" role="group" aria-label="Choose a lesson view">
+          <button type="button" data-mode="maya" aria-pressed="true"><span class="av" style="background:#2B6E8F">M</span>Maya</button>
+          <button type="button" data-mode="jordan" aria-pressed="false"><span class="av" style="background:#A4561B">J</span>Jordan</button>
+          <button type="button" data-mode="side" aria-pressed="false">Side by side</button>
+        </div>
+        <span class="hint">Act 3 · Same lesson, two deliveries</span>
+        <button class="btn" type="button" data-go="summary">Teacher summary<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-next" xlink:href="#i-next"/></svg></button>
+      </div>
+      <div class="players m-maya" id="players">
+        <section class="player" id="pl-maya" aria-label="Maya's lesson"></section>
+        <section class="player" id="pl-jordan" aria-label="Jordan's lesson"></section>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <section class="screen" id="s-summary" aria-label="Teacher summary">
+    <div class="rv">
+      <div>
+        <div class="eyebrow">Teacher view · After the lesson</div>
+        <h2 class="t">End-of-lesson summary</h2>
+        <p class="lead">Built from real taps in this session. Use it for progress notes on IEP goals.</p>
+      </div>
+      <div class="cols" id="sumcols"></div>
+      <div class="rv-foot">
+        <span class="msg">Nothing is saved after this page closes.</span>
+        <button class="btn" type="button" data-go="lessons"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-back" xlink:href="#i-back"/></svg>Back to lessons</button>
+        <button class="btn primary" type="button" data-go="close">Finish<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-next" xlink:href="#i-next"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE -->
+  <section class="screen" id="s-close" aria-label="Closing">
+    <div class="close">
+      <div>
+        <div class="eyebrow">The idea in one line</div>
+        <h1><span>Same curriculum.</span><span class="c2">Personalized delivery.</span></h1>
+        <p class="sub">Built on the accommodations students' IEPs already require.</p>
+        <ul class="proof">
+          <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-book" xlink:href="#i-book"/></svg>Every scene links back to a sentence in the adopted textbook.</li>
+          <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-shield" xlink:href="#i-shield"/></svg>A teacher approves every script before a student sees it.</li>
+          <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-chart" xlink:href="#i-chart"/></svg>Progress comes from real student responses, ready for IEP notes.</li>
+        </ul>
+        <div class="foot" style="justify-content:flex-start">
+          <button class="btn primary" type="button" id="replayAll"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-loop" xlink:href="#i-loop"/></svg>Start the demo over</button>
+          <button class="btn" type="button" data-go="summary"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-back" xlink:href="#i-back"/></svg>Back to summary</button>
+        </div>
+      </div>
+      <div class="close-art" id="closeArt"></div>
+    </div>
+  </section>
+</div>
+
+<div id="rotate" role="alert"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="28" width="72" height="46" rx="8" fill="none" stroke="#fff" stroke-width="6"/><path d="M50 12a36 36 0 0 1 34 22" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M78 24l6 10-11 2" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Turn the iPad sideways to see the demo.</div>
+
+<script>
+(function(){
+'use strict';
+
+/* ================= helpers ================= */
+var $ = function(s, r){ return (r || document).querySelector(s); };
+var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+var RM = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+function wait(ms){ return new Promise(function(r){ setTimeout(r, ms); }); }
+var EASE = {
+  sine: function(t){ return -(Math.cos(Math.PI * t) - 1) / 2; },
+  io: function(t){ return t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; },
+  inq: function(t){ return t * t; },
+  lin: function(t){ return t; }
+};
+function tween(ms, fn, alive, ease){
+  ease = ease || EASE.sine;
+  return new Promise(function(res){
+    if (RM || ms <= 0){ fn(1); res(true); return; }
+    var t0 = null;
+    function f(now){
+      if (alive && !alive()){ res(false); return; }
+      if (t0 === null) t0 = now;
+      var t = Math.min(1, (now - t0) / ms);
+      fn(ease(t));
+      if (t < 1) requestAnimationFrame(f); else res(true);
+    }
+    requestAnimationFrame(f);
+  });
+}
+function anim(el, frames, opts){
+  if (RM || !el || !el.animate) return Promise.resolve();
+  try { var a = el.animate(frames, opts); return a.finished ? a.finished.catch(function(){}) : wait(opts.duration || 0); }
+  catch(e){ return Promise.resolve(); }
+}
+function use(id, cls){ return '<svg class="' + (cls || '') + '" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#i-' + id + '" xlink:href="#i-' + id + '"/></svg>'; }
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function nowTime(){ try { return new Date().toLocaleTimeString([], {hour:'numeric', minute:'2-digit'}); } catch(e){ return ''; } }
+function fmtDur(ms){ var s = Math.max(0, Math.round(ms / 1000)); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
+
+/* ================= content ================= */
+var ST = {
+  N:{name:'Introduction', icon:'drip', bg:'#E2EDF5', hl:'#CFE4F5', ink:'#24557A', col:'#9CC7E8'},
+  E:{name:'Evaporation', icon:'sun', bg:'#F7E8BE', hl:'#F8DC8B', ink:'#6B4E00', col:'#E3AE2E'},
+  C:{name:'Condensation', icon:'cloud', bg:'#E7DFF6', hl:'#DCD0F6', ink:'#4E3B86', col:'#9A86D1'},
+  P:{name:'Precipitation', icon:'rain', bg:'#D7E0EA', hl:'#CAD6E3', ink:'#3A536D', col:'#7F95AD'},
+  L:{name:'Collection', icon:'pond', bg:'#CFE6E4', hl:'#A8D7D7', ink:'#195A60', col:'#2F7E86'}
+};
+var ORDER = ['E','C','P','L'];
+
+var SENT = {
+  I1:{st:'N', para:'Introduction', text:"The water cycle is the continuous movement of water between Earth’s surface and the atmosphere."},
+  E1:{st:'E', para:'Evaporation', text:'When sunlight warms the surface of oceans, lakes, and ponds, some of the liquid water changes into an invisible gas called water vapor.'},
+  E2:{st:'E', para:'Evaporation', text:'The water vapor rises into the atmosphere with warm air.'},
+  C1:{st:'C', para:'Condensation', text:'As water vapor rises higher in the atmosphere, the air around it becomes cooler.'},
+  C2:{st:'C', para:'Condensation', text:'When water vapor cools, it changes back into tiny liquid droplets.'},
+  C3:{st:'C', para:'Condensation', text:'Billions of these droplets gather around specks of dust to form clouds.'},
+  P1:{st:'P', para:'Precipitation', text:'Inside a cloud, droplets collide and join together, growing larger and heavier.'},
+  P2:{st:'P', para:'Precipitation', text:'When the droplets become too heavy to stay in the air, they fall to Earth as precipitation.'},
+  L1:{st:'L', para:'Collection', text:'Much of the rest flows downhill over the land as runoff.'},
+  L2:{st:'L', para:'Collection', text:'Eventually, the water collects in ponds, lakes, and oceans, where the cycle begins again.'}
+};
+function S(id){ var s = SENT[id]; return '<span class="src" data-sid="' + id + '" data-st="' + s.st + '">' + s.text + '</span>'; }
+
+var BLUE = {
+  E:{plain:'The sun warms the water. The water turns into a gas called water vapor and rises into the air.', kw:'Evaporation', nar:'Sun warms the pond. Drip turns to vapor and rises.', q:'What warms the water?', ch:['sun','moon','fish']},
+  C:{plain:'High in the sky, the air is cool. The vapor cools and turns back into tiny drops. The drops gather into clouds.', kw:'Condensation', nar:'Drip cools and gathers with other drops into a cloud.', q:'What do the drops form?', ch:['cloud','flower','sun']},
+  P:{plain:'Drops in a cloud join together and get heavy. Heavy drops fall to Earth as rain, snow, sleet, or hail.', kw:'Precipitation', nar:'The drops grow heavy and fall as rain.', q:'How does water come down?', ch:['rain','bird','moon']},
+  L:{plain:'Rain flows downhill over the land. The water collects in ponds, lakes, and oceans. Then the cycle begins again.', kw:'Collection', nar:'Drip flows downhill and collects in the pond.', q:'Where does the water collect?', ch:['pond','cloud','tree']}
+};
+
+var BG = {N:ST.N.bg, E:ST.E.bg, C:ST.C.bg, P:ST.P.bg, L:ST.L.bg};
+var INIT = {bg:BG.N, sunY:-330, cloudOp:0, cloudDark:0, f0:0, f1:0, f2:0, f3:0, rainOp:0, dx:300, dy:386, ds:.8, dr:0, dop:0, mood:'happy', form:'drop', ripple:0, loop:0, hlOp:0, hlX:400, hlY:240, hlRX:80, hlRY:80, hlC:'#333'};
+
+var BEATS = [
+  {id:'intro', st:'N', src:'I1', steps:[{ms:300},{ms:1400, to:{dop:1}},{ms:300}]},
+  {id:'e1', st:'E', src:'E1', steps:[{set:{bg:BG.E}},{ms:700},{ms:2200, to:{sunY:95}},{ms:400},{set:{mood:'warm'}},{ms:600}]},
+  {id:'e2', st:'E', src:'E2', check:'E', steps:[{set:{form:'vapor'}},{ms:900},{ms:3600, to:{dx:420, dy:128, ds:.62}},{ms:300}]},
+  {id:'c1', st:'C', src:'C1', steps:[{set:{bg:BG.C}},{ms:700},{ms:1800, to:{sunY:-330}},{set:{mood:'cold'}},{ms:300},{ms:1500, shiver:1},{ms:300}]},
+  {id:'c2', st:'C', src:'C2', check:'C', steps:[{set:{form:'drop', mood:'calm'}},{ms:800},{ms:600, to:{f0:1}},{ms:600, to:{f1:1}},{ms:600, to:{f2:1}},{ms:600, to:{f3:1}},{ms:1600, to:{cloudOp:1}},{set:{mood:'happy'}},{ms:400}]},
+  {id:'p1', st:'P', src:'P1', steps:[{set:{bg:BG.P}},{ms:700},{ms:1600, to:{cloudDark:1}},{ms:1400, to:{ds:.8}},{set:{mood:'surprised'}},{ms:500}]},
+  {id:'p2', st:'P', src:'P2', check:'P', steps:[{ms:1000, to:{rainOp:1}},{ms:2600, to:{dx:690, dy:226}, ease:'in'},{set:{mood:'happy'}},{ms:500}]},
+  {id:'l1', st:'L', src:'L1', steps:[{set:{bg:BG.L}},{ms:700},{ms:900, to:{rainOp:0}},{ms:3000, path:[[690,226],[640,230],[585,292],[505,350]], to:{dx:505, dy:350, dr:0}},{ms:300}]},
+  {id:'l2', st:'L', src:'L2', check:'L', steps:[{ms:2000, to:{dx:300, dy:386}},{ms:1800, to:{ripple:1}},{set:{mood:'big'}},{ms:600}]},
+  {id:'fin', st:'N', src:'L2', end:true, steps:[{set:{bg:BG.N, mood:'happy', ripple:0}},{ms:500},{ms:1400, to:{loop:1, cloudOp:0, f0:0, f1:0, f2:0, f3:0}},{ms:1100, to:{dx:400, dy:380, ds:.55}},{ms:6000, orbit:1, to:{dx:400, dy:380}},{set:{mood:'big'}},{ms:500}]}
+];
+function beatIndex(id){ for (var i = 0; i < BEATS.length; i++) if (BEATS[i].id === id) return i; return 0; }
+
+/* start-of-beat snapshots */
+var SNAP = (function(){
+  var s = Object.assign({}, INIT), out = [];
+  BEATS.forEach(function(b){
+    out.push(Object.assign({}, s, {dop:b.id === 'intro' ? 0 : 1}));
+    b.steps.forEach(function(st){ if (st.set) Object.assign(s, st.set); if (st.to) Object.assign(s, st.to); });
+  });
+  out.push(Object.assign({}, s));
+  return out;
+})();
+var THUMB = {
+  N: Object.assign({}, SNAP[1], {dop:1}),
+  E: Object.assign({}, SNAP[beatIndex('e2')], {form:'vapor', dx:385, dy:235, ds:.7, mood:'warm'}),
+  C: Object.assign({}, SNAP[beatIndex('p1')]),
+  P: Object.assign({}, SNAP[beatIndex('p2')], {rainOp:1, dx:575, dy:185, mood:'surprised'}),
+  L: Object.assign({}, SNAP[beatIndex('fin')], {ripple:.45, mood:'big'})
+};
+
+var CAP = {
+  maya:{
+    intro:{kw:'Drip', t:'This is Drip. Drip is a drop of water in a pond.'},
+    e1:{kw:'Sunlight', t:'The sun shines on the pond. The water gets warm.'},
+    e2:{kw:'Evaporation', t:'The warm water turns into a gas called water vapor. The vapor rises into the air. This is evaporation.'},
+    c1:{kw:'Cool air', t:'High in the sky, the air is cool. The water vapor gets cold.'},
+    c2:{kw:'Condensation', t:'The cold vapor turns back into tiny drops of water. The drops gather and form a cloud. This is condensation.'},
+    p1:{kw:'Heavy', t:'The drops in the cloud join together. They grow bigger and heavier.'},
+    p2:{kw:'Precipitation', t:'The drops get too heavy to stay in the air. They fall to the ground as rain. This is precipitation.'},
+    l1:{kw:'Runoff', t:'The rain lands on the ground and flows downhill. This water is called runoff.'},
+    l2:{kw:'Collection', t:'The water collects in ponds, lakes, and oceans. This is collection.'},
+    fin:{kw:'Water cycle', t:'Then the sun warms the water again. The water cycle starts over.'}
+  },
+  jordan:{
+    intro:{kw:'Drip', n:'This is Drip. Drip is water.'},
+    e1:{kw:'Warm', n:'The sun is hot. Drip is warm.'},
+    e2:{kw:'Up', n:'Drip goes up, up, up. Evaporation.'},
+    c1:{kw:'Cold', n:'The sky is cold. Drip is cold.'},
+    c2:{kw:'Cloud', n:'Drip and friends make a cloud. Condensation.'},
+    p1:{kw:'Heavy', n:'The cloud is full. Drip is heavy.'},
+    p2:{kw:'Rain', n:'Drip falls down. Rain! Precipitation.'},
+    l1:{kw:'Down', n:'Drip goes down the hill.'},
+    l2:{kw:'Pond', n:'Drip is back in the pond. Collection.'},
+    fin:{kw:'Again', n:'The sun warms Drip again. Around and around. The water cycle.'}
+  }
+};
+
+var CHOICE = {
+  sun:{label:'Sun', words:['sun','sunny','sunshine','sunlight','heat','hot','warm','warmth']},
+  moon:{label:'Moon', words:['moon','night']},
+  fish:{label:'Fish', words:['fish','fishes']},
+  cloud:{label:'Cloud', words:['cloud','clouds','cloudy']},
+  flower:{label:'Flower', words:['flower','flowers','plant','plants']},
+  rain:{label:'Rain', words:['rain','raining','rains','rainfall','rainy','precipitation']},
+  bird:{label:'Bird', words:['bird','birds','fly','flying']},
+  pond:{label:'Pond', words:['pond','ponds','lake','lakes','ocean','oceans','sea','river','puddle']},
+  tree:{label:'Tree', words:['tree','trees','leaf','leaves']}
+};
+
+var CHECKS = {
+  E:{src:'E1', key:'e1', correct:'sun', ring:{x:130, y:95, rx:80, ry:80},
+     maya:{q:'What warms the water so it can rise?', ch:['moon','sun','fish'], yes:'Yes. The sun warms the water, and it rises as vapor.', hint:'Hint: Watch what warms the pond.'},
+     jordan:{q:'What makes Drip warm?', ch:['sun','moon'], yes:'Yes! Sun!', hint:'Look. The sun.'}},
+  C:{src:'C3', key:'c2', correct:'cloud', ring:{x:430, y:112, rx:205, ry:88},
+     maya:{q:'What do the cold drops of water form?', ch:['flower','cloud','sun'], yes:'Yes. The tiny drops gather and form a cloud.', hint:'Hint: Watch what the drops make together.'},
+     jordan:{q:'What does Drip make?', ch:['flower','cloud'], yes:'Yes! Cloud!', hint:'Look. A cloud.'}},
+  P:{src:'P2', key:'p2', correct:'rain', ring:{x:560, y:215, rx:175, ry:80},
+     maya:{q:'How does the water come back down?', ch:['rain','bird','moon'], yes:'Yes. Heavy drops fall to the ground as rain.', hint:'Hint: Watch how Drip comes down.'},
+     jordan:{q:'How does Drip come down?', ch:['bird','rain'], yes:'Yes! Rain!', hint:'Look. Rain.'}},
+  L:{src:'L2', key:'l2', correct:'pond', ring:{x:300, y:414, rx:205, ry:56},
+     maya:{q:'Where does the rain water collect?', ch:['cloud','tree','pond'], yes:'Yes. The water collects in the pond.', hint:'Hint: Watch where Drip goes.'},
+     jordan:{q:'Where does Drip go?', ch:['pond','tree'], yes:'Yes! Pond!', hint:'Look. The pond.'}}
+};
+var CHECK_AFTER = {}; BEATS.forEach(function(b, i){ if (b.check) CHECK_AFTER[b.check] = i; });
+
+var QA = {
+  N:[
+    {i:'drip', q:'What is Drip?', qj:'What is Drip?', a:'Drip is one drop of water.', aj:'Drip is water.'},
+    {i:'eyeoff', q:'Is Drip real?', qj:'Is Drip real?', a:'Drip is a pretend character. Real drops of water move the same way.', aj:'Drip is pretend. Water is real.'},
+    {i:'pond', q:'Where is Drip?', qj:'Where is Drip?', a:'Drip is in a pond.', aj:'In the pond.'}],
+  E:[
+    {i:'eyeoff', q:"Why can't I see water vapor?", qj:'Where did Drip go?', a:'Water vapor is a gas. It is invisible, like air.', aj:'Drip is in the air. You can not see it.'},
+    {i:'house', q:'Does this happen at home?', qj:'At home too?', a:'Yes. A wet towel dries because its water evaporates.', aj:'Yes. Wet things dry.'},
+    {i:'sun', q:'Why does the water rise?', qj:'Why up?', a:'The sun warms it. Warm water vapor rises with warm air.', aj:'The sun makes it warm.'}],
+  C:[
+    {i:'cloud', q:'What is a cloud made of?', qj:'What is a cloud?', a:'A cloud is made of billions of tiny drops of water.', aj:'Lots of tiny drops.'},
+    {i:'glass', q:'Can I see condensation at home?', qj:'At home too?', a:'Yes. Drops form on the outside of a cold glass.', aj:'Yes. On a cold glass.'},
+    {i:'snow', q:'Why is the air cold up high?', qj:'Why cold?', a:'Air high in the sky is cooler than air near the ground.', aj:'Up high is cold.'}],
+  P:[
+    {i:'snow', q:'Is snow precipitation too?', qj:'Snow too?', a:'Yes. Rain, snow, sleet, and hail are all precipitation.', aj:'Yes. Snow too.'},
+    {i:'heavy', q:'Why do the drops fall?', qj:'Why down?', a:'They get too heavy to stay in the air.', aj:'Drops are heavy.'},
+    {i:'drip', q:'Is Drip okay?', qj:'Is Drip okay?', a:'Yes. Drip is fine. Falling is part of the trip.', aj:'Yes. Drip is okay.'}],
+  L:[
+    {i:'ground', q:'Does all the rain reach the pond?', qj:'All in the pond?', a:'No. Some soaks into the ground. Some flows into streams and lakes.', aj:'Some goes in the ground.'},
+    {i:'hill', q:'What is runoff?', qj:'What is runoff?', a:'Runoff is rain water that flows over the land.', aj:'Water going down the hill.'},
+    {i:'loop', q:'Does the cycle stop?', qj:'Does it stop?', a:'No. The sun warms the water again, and the cycle repeats.', aj:'No. Again and again.'}]
+};
+var TEACHER_Q = {i:'teacher', q:'I want my teacher', qj:'Teacher, please', a:'Your teacher is coming to help you.', aj:'Teacher is coming.'};
+
+var PROFILES = {
+  maya:{key:'maya', name:'Maya', initial:'M', color:'#2B6E8F', soft:'#D9E9F1', sound:false, pace:1, sentences:true, typing:true, listen:false, breakSecs:60, scheduledBreak:null, rate:1, sparse:true,
+    tags:['Autistic','Sound-sensitive','Strong visual learner','Reads at grade level','Overwhelmed by busy screens'],
+    acc:[{i:'text', t:'Short, complete sentences'},{i:'mute', t:'Sound off: no narration or effects'},{i:'calm', t:'Calm, sparse visuals'},{i:'tap', t:'Answers by tapping or typing'},{i:'word', t:'Checkpoints: 3 picture choices'}]},
+  jordan:{key:'jordan', name:'Jordan', initial:'J', color:'#A4561B', soft:'#F5E1D0', sound:true, pace:1.4, sentences:false, typing:false, listen:true, breakSecs:120, scheduledBreak:'C', rate:.82, sparse:false,
+    tags:['Down syndrome','Early reader','Uses an AAC tablet','Needs extra processing time'],
+    acc:[{i:'word', t:'One key word per scene'},{i:'speaker', t:'Narration on every scene'},{i:'slow', t:'Slower pacing, extra wait time'},{i:'pause', t:'Longer breaks, one scheduled'},{i:'aac', t:'Two big picture choices, AAC-ready'}]}
+};
+var LABELS = {question:'Question', again:'Again', got:'Got it', brk:'Break'};
+var APPROVED = {maya:null, jordan:null};
+
+/* ================= audio ================= */
+var Speech = {
+  ok: ('speechSynthesis' in window) && ('SpeechSynthesisUtterance' in window),
+  voice: null, owner: null, unlocked: false,
+  init: function(){
+    if (!this.ok) return;
+    var self = this;
+    var pick = function(){
+      var vs = [];
+      try { vs = window.speechSynthesis.getVoices() || []; } catch(e){}
+      var en = vs.filter(function(v){ return /^en/i.test(v.lang); });
+      var pref = ['Samantha','Ava','Allison','Susan','Karen','Moira','Google US English'];
+      var found = null;
+      for (var i = 0; i < pref.length && !found; i++) found = en.filter(function(v){ return v.name.indexOf(pref[i]) === 0; })[0] || null;
+      self.voice = found || en.filter(function(v){ return /en[-_]US/i.test(v.lang); })[0] || en[0] || null;
+    };
+    pick();
+    try { window.speechSynthesis.onvoiceschanged = pick; } catch(e){}
+  },
+  unlock: function(){
+    if (!this.ok) return;
+    try { var u = new SpeechSynthesisUtterance(' '); u.volume = 0; window.speechSynthesis.speak(u); this.unlocked = true; } catch(e){}
+  },
+  cancel: function(){ if (this.ok){ try { window.speechSynthesis.cancel(); } catch(e){} } this.owner = null; },
+  stopOwner: function(o){ if (this.owner === o) this.cancel(); },
+  say: function(text, opt){
+    opt = opt || {};
+    var self = this;
+    return new Promise(function(res){
+      if (!self.ok || !text){ res(); return; }
+      var rate = opt.rate || 1, done = false;
+      var fin = function(){ if (!done){ done = true; res(); } };
+      var u;
+      try {
+        if (!opt.queue) window.speechSynthesis.cancel();
+        u = new SpeechSynthesisUtterance(text);
+        if (self.voice) u.voice = self.voice;
+        u.lang = 'en-US'; u.rate = rate; u.pitch = 1.05;
+        u.onend = fin; u.onerror = fin;
+      } catch(e){ fin(); return; }
+      self.owner = opt.owner || null;
+      setTimeout(fin, 1800 + text.length * 95 / rate);
+      var go = function(){ try { window.speechSynthesis.speak(u); } catch(e){ fin(); } };
+      if (opt.queue) go(); else setTimeout(go, 50);
+    });
+  }
+};
+var Snd = {
+  ctx: null,
+  unlock: function(){
+    try {
+      var C = window.AudioContext || window.webkitAudioContext; if (!C) return;
+      if (!this.ctx) this.ctx = new C();
+      var b = this.ctx.createBuffer(1, 1, 22050), s = this.ctx.createBufferSource();
+      s.buffer = b; s.connect(this.ctx.destination); s.start(0);
+      if (this.ctx.resume) this.ctx.resume();
+    } catch(e){}
+  },
+  chime: function(){
+    var c = this.ctx; if (!c) return;
+    try {
+      var t = c.currentTime;
+      [523.25, 659.25, 783.99].forEach(function(f, i){
+        var o = c.createOscillator(), g = c.createGain();
+        o.type = 'sine'; o.frequency.value = f;
+        g.gain.setValueAtTime(0.0001, t + i * .2);
+        g.gain.exponentialRampToValueAtTime(0.06, t + i * .2 + .05);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + i * .2 + .9);
+        o.connect(g); g.connect(c.destination); o.start(t + i * .2); o.stop(t + i * .2 + 1);
+      });
+    } catch(e){}
+  }
+};
+
+/* ================= Drip + scene ================= */
+function dripMarkup(mood, form){
+  return '<g class="drip" data-mood="' + (mood || 'happy') + '" data-form="' + (form || 'drop') + '">' +
+    '<path class="d-body" d="M0,-62 C10,-46 46,-14 46,18 C46,45 25,62 0,62 C-25,62 -46,45 -46,18 C-46,-14 -10,-46 0,-62Z"/>' +
+    '<ellipse class="d-shine" cx="-25" cy="2" rx="6" ry="13" transform="rotate(22 -25 2)"/>' +
+    '<g class="d-cheeks"><ellipse cx="-31" cy="31" rx="7" ry="5"/><ellipse cx="31" cy="31" rx="7" ry="5"/></g>' +
+    '<g class="d-eo"><ellipse class="d-white" cx="-16" cy="11" rx="11" ry="14"/><ellipse class="d-white" cx="16" cy="11" rx="11" ry="14"/><circle class="d-pupil" cx="-14" cy="14" r="6.5"/><circle class="d-pupil" cx="18" cy="14" r="6.5"/><circle class="d-glint" cx="-12" cy="11" r="2.2"/><circle class="d-glint" cx="20" cy="11" r="2.2"/></g>' +
+    '<g class="d-ec d-line"><path d="M-26,13 Q-16,21 -6,13"/><path d="M6,13 Q16,21 26,13"/></g>' +
+    '<g class="d-brow d-line"><path d="M-27,-4 L-8,-10"/><path d="M27,-4 L8,-10"/></g>' +
+    '<path class="d-m d-line m-happy" d="M-12,35 Q0,46 12,35"/>' +
+    '<path class="d-m m-big" d="M-15,32 Q0,54 15,32 Z"/>' +
+    '<ellipse class="d-m m-o" cx="0" cy="38" rx="6" ry="7.5"/>' +
+    '<path class="d-m d-line m-wavy" d="M-13,39 q3.25,-5 6.5,0 t6.5,0 t6.5,0 t6.5,0"/>' +
+    '<path class="d-m d-line m-calm" d="M-8,37 Q0,42 8,37"/>' +
+  '</g>';
+}
+function dripSVG(mood, cls){ return '<svg class="' + (cls || 'big') + '" viewBox="-56 -70 112 140" aria-hidden="true" focusable="false">' + dripMarkup(mood) + '</svg>'; }
+
+var CLOUD_D = 'M-160,40 C-200,40 -205,-8 -165,-16 C-172,-62 -108,-80 -80,-48 C-62,-98 18,-102 34,-52 C66,-86 132,-70 126,-20 C172,-20 176,40 132,40 Z';
+var SCN = 0;
+function sceneMarkup(uid, sparse){
+  var rays = '';
+  for (var i = 0; i < 8; i++){ var a = i * Math.PI / 4, c = Math.cos(a), s = Math.sin(a); rays += 'M' + (c * 58).toFixed(1) + ',' + (s * 58).toFixed(1) + ' L' + (c * 76).toFixed(1) + ',' + (s * 76).toFixed(1) + ' '; }
+  var rain = '';
+  for (var j = 0; j < 11; j++){ var x = 300 + j * 28, y = 186 + (j % 3) * 24; rain += 'M' + x + ',' + y + ' l12,28 '; }
+  var friends = [[335,132],[505,130],[468,80],[372,84]].map(function(p){ return '<g class="s-f" transform="translate(' + p[0] + ',' + p[1] + ') scale(.34)" opacity="0">' + dripMarkup('happy') + '</g>'; }).join('');
+  var badges = [['E',250,230],['C',400,80],['P',550,230],['L',400,380]].map(function(b){ return '<g transform="translate(' + b[1] + ',' + b[2] + ')"><circle r="40" fill="#fff" stroke="' + ST[b[0]].col + '" stroke-width="6"/><use href="#i-' + ST[b[0]].icon + '" xlink:href="#i-' + ST[b[0]].icon + '" x="-28" y="-28" width="56" height="56"/></g>'; }).join('');
+  return '<svg class="scene' + (sparse ? ' sparse' : '') + '" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">' +
+    '<defs><clipPath id="' + uid + '-w"><rect x="-900" y="420" width="2600" height="600"/></clipPath></defs>' +
+    '<rect class="s-bg" x="-900" y="-500" width="2600" height="1500" style="fill:' + BG.N + '"/>' +
+    '<path class="deco" d="M-900,318 L0,318 C120,282 230,292 330,316 C430,340 520,292 620,292 C700,292 760,306 800,312 L1700,312 V1000 H-900Z" fill="#C3D6C4" opacity=".75"/>' +
+    '<g class="s-sun" transform="translate(130,-330)"><path d="' + rays + '" stroke="#E7B23A" stroke-width="8" stroke-linecap="round" fill="none"/><circle r="44" fill="#F6C744" stroke="#C99A1A" stroke-width="4"/></g>' +
+    '<g class="s-cloud" transform="translate(440,130)" opacity="0"><path d="' + CLOUD_D + '" fill="#FFFFFF" stroke="#9AA8BC" stroke-width="4"/><path class="s-cd" d="' + CLOUD_D + '" fill="#8A9CB3" stroke="#5E7088" stroke-width="4" opacity="0"/></g>' +
+    friends +
+    '<path class="s-rain" d="' + rain + '" stroke="#6F86A1" stroke-width="5" stroke-linecap="round" fill="none" opacity="0"/>' +
+    '<path class="s-ground" d="M-900,404 L0,404 C120,398 230,400 330,406 C420,412 470,404 520,385 C570,360 610,300 660,282 C700,270 760,272 800,280 L1700,280 L1700,1000 L-900,1000 Z" fill="#A7C49B"/>' +
+    '<g class="deco"><rect x="64" y="322" width="16" height="84" rx="4" fill="#8A6B4E"/><circle cx="72" cy="310" r="36" fill="#86B283"/><circle cx="48" cy="330" r="24" fill="#86B283"/><circle cx="98" cy="332" r="24" fill="#86B283"/>' +
+      '<path d="M128,418 v-30 M138,420 v-22 M470,416 v-26 M480,414 v-18" stroke="#5E9152" stroke-width="5" stroke-linecap="round"/>' +
+      '<path d="M720,300 q6,-14 12,0 M748,296 q6,-14 12,0" stroke="#6E9C62" stroke-width="4" fill="none" stroke-linecap="round"/></g>' +
+    '<ellipse class="s-pond" cx="300" cy="420" rx="170" ry="30" fill="#5DA9D6" stroke="#2F7AA6" stroke-width="4"/>' +
+    '<ellipse class="s-rip" cx="300" cy="420" rx="20" ry="5" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0"/>' +
+    '<rect class="s-veil" x="-900" y="-500" width="2600" height="1500" fill="#FFFFFF" opacity="0"/>' +
+    '<g class="s-loop" opacity="0"><circle cx="400" cy="230" r="150" fill="none" stroke="#6A86A0" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round"/>' + badges + '</g>' +
+    '<g class="s-drip" transform="translate(300,386) scale(.8)" opacity="0">' + dripMarkup('happy') + '</g>' +
+    '<ellipse class="s-pf" cx="300" cy="420" rx="170" ry="30" fill="#4A97C6" opacity=".55" clip-path="url(#' + uid + '-w)"/>' +
+    '<ellipse class="s-hl" cx="400" cy="240" rx="80" ry="80" fill="none" stroke-width="7" stroke-dasharray="16 12" stroke-linecap="round" opacity="0"/>' +
+  '</svg>';
+}
+function Scene(box, opt){
+  opt = opt || {};
+  this.uid = 'sc' + (SCN++);
+  this.box = box;
+  box.insertAdjacentHTML('beforeend', sceneMarkup(this.uid, opt.sparse));
+  var svg = this.svg = box.lastElementChild;
+  var q = function(s){ return svg.querySelector(s); };
+  this.e = {bg:q('.s-bg'), sun:q('.s-sun'), cloud:q('.s-cloud'), cd:q('.s-cd'), f:$$('.s-f', svg), rain:q('.s-rain'), rip:q('.s-rip'), veil:q('.s-veil'), loop:q('.s-loop'), drip:q('.s-drip'), dg:q('.s-drip .drip'), pf:q('.s-pf'), hl:q('.s-hl')};
+  this.st = Object.assign({}, INIT);
+  this.render();
+}
+Scene.prototype.set = function(o){ Object.assign(this.st, o); this.render(); };
+Scene.prototype.render = function(){
+  var s = this.st, e = this.e;
+  if (e.bg.style.fill !== s.bg) e.bg.style.fill = s.bg;
+  if (this.box.style.backgroundColor !== s.bg) this.box.style.backgroundColor = s.bg;
+  e.sun.setAttribute('transform', 'translate(130,' + s.sunY.toFixed(1) + ')');
+  e.cloud.setAttribute('opacity', s.cloudOp);
+  e.cd.setAttribute('opacity', s.cloudDark);
+  for (var i = 0; i < 4; i++) e.f[i].setAttribute('opacity', s['f' + i]);
+  e.rain.setAttribute('opacity', s.rainOp * .8);
+  e.drip.setAttribute('transform', 'translate(' + s.dx.toFixed(1) + ',' + s.dy.toFixed(1) + ') rotate(' + s.dr.toFixed(1) + ') scale(' + s.ds.toFixed(3) + ')');
+  e.drip.setAttribute('opacity', s.dop);
+  if (e.dg.getAttribute('data-mood') !== s.mood) e.dg.setAttribute('data-mood', s.mood);
+  if (e.dg.getAttribute('data-form') !== s.form) e.dg.setAttribute('data-form', s.form);
+  var r = s.ripple;
+  e.rip.setAttribute('rx', 20 + 150 * r); e.rip.setAttribute('ry', 5 + 24 * r);
+  e.rip.setAttribute('opacity', (r > 0 && r < 1) ? ((1 - r) * .9).toFixed(3) : 0);
+  e.veil.setAttribute('opacity', .62 * s.loop);
+  e.loop.setAttribute('opacity', s.loop);
+  e.pf.setAttribute('opacity', .55 * (1 - s.loop));
+  e.hl.setAttribute('cx', s.hlX); e.hl.setAttribute('cy', s.hlY); e.hl.setAttribute('rx', s.hlRX); e.hl.setAttribute('ry', s.hlRY);
+  e.hl.setAttribute('stroke', s.hlC); e.hl.setAttribute('opacity', s.hlOp);
+};
+function runSteps(sc, steps, pace, alive){
+  var i = 0;
+  function next(){
+    if (!alive()) return Promise.resolve(false);
+    if (i >= steps.length) return Promise.resolve(true);
+    var st = steps[i++];
+    if (st.set) sc.set(st.set);
+    var ms = (st.ms || 0) * pace, p;
+    if (st.path){
+      var P = st.path;
+      p = tween(ms, function(t){
+        var u = 1 - t;
+        sc.set({dx:u*u*u*P[0][0] + 3*u*u*t*P[1][0] + 3*u*t*t*P[2][0] + t*t*t*P[3][0],
+                dy:u*u*u*P[0][1] + 3*u*u*t*P[1][1] + 3*u*t*t*P[2][1] + t*t*t*P[3][1],
+                dr:-18 * Math.sin(Math.PI * t)});
+      }, alive, EASE.io).then(function(ok){ if (ok) sc.set(st.to); return ok; });
+    } else if (st.orbit){
+      p = tween(ms, function(t){ var a = (90 + 360 * t) * Math.PI / 180; sc.set({dx:400 + 150 * Math.cos(a), dy:230 + 150 * Math.sin(a)}); }, alive, EASE.io)
+        .then(function(ok){ if (ok) sc.set(st.to); return ok; });
+    } else if (st.shiver){
+      var x0 = sc.st.dx;
+      p = tween(ms, function(t){ sc.set({dx:x0 + Math.sin(t * Math.PI * 6) * 7 * (1 - t)}); }, alive, EASE.lin)
+        .then(function(ok){ sc.set({dx:x0}); return ok; });
+    } else if (st.to){
+      var from = {}, k;
+      for (k in st.to) from[k] = sc.st[k];
+      p = tween(ms, function(t){ var o = {}; for (var kk in st.to) o[kk] = from[kk] + (st.to[kk] - from[kk]) * t; sc.set(o); }, alive, st.ease === 'in' ? EASE.inq : EASE.sine)
+        .then(function(ok){ if (ok) sc.set(st.to); return ok; });
+    } else if (ms){
+      p = wait(ms).then(function(){ return alive(); });
+    } else p = Promise.resolve(true);
+    return p.then(function(ok){ return ok ? next() : false; });
+  }
+  return next();
+}
+
+/* ================= stage scaling ================= */
+var app = $('#app'), SCALE = 1;
+function fit(){
+  var ae = document.activeElement;
+  if (ae && ae.tagName === 'INPUT') return;
+  var cs = getComputedStyle($('#safe'));
+  var it = parseFloat(cs.paddingTop) || 0, ib = parseFloat(cs.paddingBottom) || 0, il = parseFloat(cs.paddingLeft) || 0, ir = parseFloat(cs.paddingRight) || 0;
+  var W = window.innerWidth - il - ir, H = window.innerHeight - it - ib;
+  SCALE = Math.min(W / 1200, H / 800);
+  app.style.transform = 'translate(' + (il + (W - 1200 * SCALE) / 2).toFixed(1) + 'px,' + (it + (H - 800 * SCALE) / 2).toFixed(1) + 'px) scale(' + SCALE.toFixed(4) + ')';
+}
+function relRect(r){ var a = app.getBoundingClientRect(); return {x:(r.left - a.left) / SCALE, y:(r.top - a.top) / SCALE, w:r.width / SCALE, h:r.height / SCALE}; }
+function rel(el){ return relRect(el.getBoundingClientRect()); }
+window.addEventListener('resize', fit);
+window.addEventListener('orientationchange', function(){ setTimeout(fit, 300); });
+document.addEventListener('focusout', function(){ setTimeout(function(){ window.scrollTo(0, 0); fit(); }, 120); });
+document.addEventListener('gesturestart', function(e){ e.preventDefault(); });
+
+/* ================= navigation ================= */
+var SCREENS = ['start','act1','act2','review','lessons','summary','close'];
+var NAV = [['act1','Blueprint'],['act2','IEP layer'],['review','Teacher review'],['lessons','Lessons'],['summary','Summary'],['close','Close']];
+var cur = null;
+$('#steps').innerHTML = NAV.map(function(n, i){ return '<button type="button" data-go="' + n[0] + '"><span class="n">' + (i + 1) + '</span>' + n[1] + '</button>'; }).join('');
+function go(name){
+  if (cur === name) return;
+  if (cur === 'lessons'){ Speech.cancel(); }
+  cur = name;
+  $$('.screen').forEach(function(s){ s.classList.toggle('on', s.id === 's-' + name); });
+  $('#top').hidden = name === 'start';
+  var idx = SCREENS.indexOf(name);
+  $$('#steps button').forEach(function(b){
+    var j = SCREENS.indexOf(b.getAttribute('data-go'));
+    b.classList.toggle('on', j === idx); b.classList.toggle('done', j < idx);
+    if (j === idx) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current');
+  });
+  if (name === 'act1'){ layoutBook(); renderA1(a1, false); }
+  if (name === 'act2') renderA2(a2, false);
+  if (name === 'review') renderReview();
+  if (name === 'lessons') setMode(mode);
+  if (name === 'summary') renderSummary();
+}
+document.addEventListener('click', function(e){
+  var t = e.target.closest ? e.target.closest('[data-go]') : null;
+  if (t){ go(t.getAttribute('data-go')); }
+});
+
+/* ================= start ================= */
+var startScene = new Scene($('#startArt'));
+startScene.set({dop:1, sunY:95, cloudOp:1, mood:'happy'});
+var closeScene = new Scene($('#closeArt'));
+closeScene.set(Object.assign({}, THUMB.N, {sunY:-330, cloudOp:0, loop:1, dx:400, dy:380, ds:.55, mood:'big'}));
+$('#startBtn').addEventListener('click', function(){ Speech.unlock(); Snd.unlock(); go('act1'); });
+$('#replayAll').addEventListener('click', function(){
+  a1 = 0; a2 = 0;
+  APPROVED.maya = null; APPROVED.jordan = null;
+  players.maya.reset(); players.jordan.reset();
+  mode = 'maya';
+  go('start');
+});
+
+/* ================= textbook ================= */
+var FIG = '<svg viewBox="0 0 280 118" aria-hidden="true"><rect width="280" height="118" fill="#EEF4F8"/>' +
+  '<circle cx="34" cy="26" r="14" fill="#E8D9A6" stroke="#9C8E62" stroke-width="1.5"/>' +
+  '<path d="M120 34c-8 0-12-5-12-10s4-9 10-9c2-7 8-11 14-11 7 0 12 4 14 10 7 0 11 5 11 10s-4 10-11 10z" fill="#fff" stroke="#8796A8" stroke-width="1.5"/>' +
+  '<path d="M190 118 L230 52 L280 70 L280 118z" fill="#B9C8B4" stroke="#7E927A" stroke-width="1.5"/>' +
+  '<path d="M0 96 C40 92 80 94 130 98 L160 118 L0 118z" fill="#9CC3DA" stroke="#6D9AB5" stroke-width="1.5"/>' +
+  '<g stroke="#5D6F82" stroke-width="1.6" fill="none" stroke-linecap="round"><path d="M70 92 C66 70 74 50 100 32"/><path d="M96 30l5 1-1 6"/><path d="M162 24 C190 22 210 30 222 44"/><path d="M218 40l5 5-6 2"/><path d="M196 54l-4 10M206 56l-4 10M216 58l-4 10"/><path d="M228 84 C210 96 186 104 150 104"/><path d="M155 100l-6 4 6 4"/></g>' +
+  '<g font-family="Atkinson Hyperlegible, sans-serif" font-size="8.5" fill="#33414F"><text x="20" y="62">Evaporation</text><text x="150" y="14">Condensation</text><text x="222" y="46">Precipitation</text><text x="176" y="113">Collection</text></g></svg>';
+$('#page').innerHTML =
+  '<div class="pg-head"><span>Chapter 7 · Water on Earth</span><span>Earth Science · Grade 7 · 214</span></div>' +
+  '<h3 class="pg-title"><small>Lesson 7.2</small>The Water Cycle</h3>' +
+  '<div class="pg-boxes"><div class="pg-box"><b>Lesson Objectives</b><ul><li>Describe the four main processes of the water cycle.</li><li>Explain how energy from the Sun drives the water cycle.</li><li>Identify where water is stored on Earth.</li></ul></div>' +
+  '<div class="pg-box"><b>Vocabulary</b>collection, condensation, evaporation, groundwater, precipitation, runoff, transpiration, water vapor</div></div>' +
+  '<div class="pg-cols">' +
+  '<h4>Introduction</h4><p>Water on Earth is always on the move. ' + S('I1') + ' Along the way, water changes among three states: solid, liquid, and gas. The total amount of water on Earth stays about the same, but its location and form change constantly.</p>' +
+  '<h4>Evaporation</h4><p>Energy from the Sun drives the water cycle. ' + S('E1') + ' This process is called <b>evaporation</b>. ' + S('E2') + ' Plants also release water vapor through tiny openings in their leaves, a process called <b>transpiration</b>.</p>' +
+  '<figure class="pg-fig">' + FIG + '<figcaption><b>Figure 7.4</b> The water cycle. Energy from the Sun moves water between Earth’s surface and the atmosphere.</figcaption></figure>' +
+  '<h4>Condensation</h4><p>' + S('C1') + ' Cool air cannot hold as much water vapor as warm air. ' + S('C2') + ' This process is called <b>condensation</b>. ' + S('C3') + '</p>' +
+  '<h4>Precipitation</h4><p>' + S('P1') + ' ' + S('P2') + ' Precipitation can be rain, snow, sleet, or hail, depending on the temperature of the air.</p>' +
+  '<h4>Collection</h4><p>When precipitation reaches the ground, some of it soaks into the soil and becomes <b>groundwater</b>. ' + S('L1') + ' Runoff travels into streams and rivers. ' + S('L2') + '</p>' +
+  '</div>' +
+  '<div class="pg-review"><b>Lesson 7.2 Review</b><ol><li>What is the source of energy for the water cycle?</li><li>Compare and contrast evaporation and condensation.</li><li>Describe two paths that precipitation can take after it reaches the ground.</li></ol></div>' +
+  '<div class="pg-foot"><span>Sample passage written for this demo in the style of a middle school Earth Science text.</span><span>214</span></div>';
+var WORDS = ($('.pg-cols').textContent.match(/\S+/g) || []).length;
+function layoutBook(){
+  var wrap = $('#bookwrap'), page = $('#page');
+  if (!wrap.clientWidth) return;
+  page.style.transform = 'none';
+  var w = page.offsetWidth, h = page.offsetHeight;
+  var s = Math.min(wrap.clientWidth / w, wrap.clientHeight / h);
+  page.style.transform = 'scale(' + s.toFixed(4) + ')';
+  page.style.left = Math.max(0, (wrap.clientWidth - w * s) / 2).toFixed(1) + 'px';
+}
+
+/* ================= ACT 1 ================= */
+var a1 = 0, busy1 = false;
+var A1 = [
+  {t:'The source: one textbook section', d:'Lesson 7.2 of a middle school Earth Science chapter, exactly as every student in the class receives it.'},
+  {t:'Find the key ideas', d:'AI marks the sentences that carry each stage of the water cycle, color-coded by stage.'},
+  {t:'Rewrite in plain language', d:'Each key idea is restated in plain words. The meaning stays the same.'},
+  {t:'Build the storyboard', d:'Each rewrite becomes a scene: a picture, one key word, and a narration line.'},
+  {t:'Add checkpoints', d:'A check-for-understanding question follows every stage, with picture answers.'}
+];
+var PIPE = ['Source','Key ideas','Plain language','Scenes','Checkpoints'];
+var STAGE_SENTS = {}; Object.keys(SENT).forEach(function(id){ var k = SENT[id].st; (STAGE_SENTS[k] = STAGE_SENTS[k] || []).push(id); });
+
+$('#v-src').innerHTML =
+  '<dl class="facts"><dt>Course</dt><dd>Earth Science, Grade 7</dd><dt>Section</dt><dd>Lesson 7.2, The Water Cycle</dd><dt>Length</dt><dd>' + WORDS + ' words in 5 paragraphs, plus a figure and review questions</dd><dt>Reading level</dt><dd>Grade 7 to 8</dd></dl>' +
+  '<div class="rule">' + use('shield') + '<div><b>The rule for everything that follows:</b> nothing is added to or removed from the curriculum. Every lesson element must link back to a sentence on this page.</div></div>';
+$('#v-key').innerHTML = '<div class="legend">' + ['N'].concat(ORDER).map(function(k){
+  var ids = STAGE_SENTS[k];
+  return '<div class="lrow" data-st="' + k + '"><span class="lsw" style="--c:' + ST[k].hl + ';--b:' + ST[k].col + '"></span><div><b>' + ST[k].name + '</b><small>“' + esc(SENT[ids[0]].text) + '”</small></div><span class="cnt">' + ids.length + (ids.length === 1 ? ' sentence' : ' sentences') + '</span></div>';
+}).join('') + '</div><p class="note">Unmarked sentences stay in the textbook and are still taught by the teacher. The lesson supplements; it does not replace.</p>';
+$('#v-plain').innerHTML = '<div class="plain">' + ORDER.map(function(k){
+  var ids = STAGE_SENTS[k];
+  return '<div class="prow" data-st="' + k + '"><span class="tag" style="--c:' + ST[k].hl + ';--i:' + ST[k].ink + '">' + ST[k].name + '</span><p class="from">From the text: “' + esc(SENT[ids[ids.length - 1]].text) + '”</p><p class="to">' + BLUE[k].plain + '</p></div>';
+}).join('') + '</div>';
+$('#v-board').innerHTML = '<div class="board">' + ORDER.map(function(k){
+  var b = BLUE[k];
+  return '<article class="scard" data-st="' + k + '"><div class="sthumb"></div><div class="sc-meta"><span class="tag" style="--c:' + ST[k].hl + ';--i:' + ST[k].ink + '">Scene · ' + ST[k].name + '</span><b class="sc-kw" style="color:' + ST[k].ink + '">' + b.kw + '</b><p class="sc-nar">' + b.nar + '</p></div></article>' +
+    '<div class="cslot" data-st="' + k + '"><div class="ccard" style="--c:' + ST[k].hl + ';--i:' + ST[k].ink + '"><span class="cq">?</span><span class="cl">Check</span>' +
+    b.ch.map(function(c){ return use(c, c === CHECKS[k].correct ? 'ok' : ''); }).join('') + '</div></div>';
+}).join('') + '</div>';
+$$('#v-board .scard').forEach(function(card){ var k = card.getAttribute('data-st'); var sc = new Scene($('.sthumb', card)); sc.set(THUMB[k]); });
+
+function setHL(on, upto){
+  var page = $('#page');
+  ['N','E','C','P','L'].forEach(function(k){ page.classList.toggle('hl-' + k, !!on); });
+}
+function showView(id){ $$('.bp-body .view').forEach(function(v){ v.classList.toggle('on', v.id === id); }); }
+function a1Foot(){
+  $('#a1c').textContent = 'Step ' + (a1 + 1) + ' of 5';
+  $('#a1next').innerHTML = (a1 === 4 ? 'Next: IEP layer' : 'Next') + use('next');
+  $('#a1next').disabled = busy1; $('#a1back').disabled = busy1;
+}
+function renderA1(step, animate){
+  $('#a1t').textContent = A1[step].t; $('#a1d').textContent = A1[step].d;
+  $('#pipe').innerHTML = PIPE.map(function(p, i){ return '<span class="' + (i < step ? 'done' : i === step ? 'on' : '') + '">' + p + '</span>'; }).join('');
+  a1Foot();
+  var prevRects = null;
+  if (animate && step === 3 && $('#v-plain').classList.contains('on')) prevRects = ORDER.map(function(k){ return rel($('#v-plain .prow[data-st="' + k + '"]')); });
+  var vid = step === 0 ? 'v-src' : step === 1 ? 'v-key' : step === 2 ? 'v-plain' : 'v-board';
+  showView(vid);
+  $$('#v-key .lrow, #v-plain .prow, #v-plain .to, #v-board .scard, #v-board .ccard').forEach(function(el){ el.classList.remove('pre'); el.style.opacity = ''; });
+  $$('#v-board .ccard').forEach(function(el){ el.style.visibility = step >= 4 ? '' : 'hidden'; });
+  if (!animate || step !== 1) setHL(step >= 1);
+  if (!animate) return Promise.resolve();
+  if (step === 1){
+    setHL(false);
+    var rows = $$('#v-key .lrow'); rows.forEach(function(r){ r.classList.add('pre'); });
+    var ks = ['N','E','C','P','L'], i = 0;
+    var stepK = function(){
+      if (i >= ks.length || cur !== 'act1') { setHL(true); rows.forEach(function(r){ r.classList.remove('pre'); }); return Promise.resolve(); }
+      var k = ks[i++];
+      $('#page').classList.add('hl-' + k);
+      rows[i - 1].classList.remove('pre');
+      return wait(RM ? 60 : 700).then(stepK);
+    };
+    return stepK();
+  }
+  if (step === 2){
+    var prow = $$('#v-plain .prow'), j = 0;
+    prow.forEach(function(r){ r.classList.add('pre'); $('.to', r).classList.add('pre'); });
+    var flyOne = function(){
+      if (j >= ORDER.length || cur !== 'act1'){ prow.forEach(function(r){ r.classList.remove('pre'); $('.to', r).classList.remove('pre'); }); return Promise.resolve(); }
+      var k = ORDER[j], row = prow[j]; j++;
+      var ids = STAGE_SENTS[k], span = $('#page .src[data-sid="' + ids[ids.length - 1] + '"]');
+      var rects = span.getClientRects(), from = relRect(rects[0] || span.getBoundingClientRect()), to = rel(row);
+      var g = document.createElement('div');
+      g.className = 'ghost'; g.textContent = SENT[ids[ids.length - 1]].text;
+      g.style.background = ST[k].hl;
+      g.style.left = from.x + 'px'; g.style.top = from.y + 'px'; g.style.width = Math.max(140, from.w) + 'px';
+      app.appendChild(g);
+      return anim(g, [{left:from.x + 'px', top:from.y + 'px', width:Math.max(140, from.w) + 'px', opacity:1},{left:to.x + 'px', top:to.y + 'px', width:to.w + 'px', opacity:1}], {duration:800, easing:'cubic-bezier(.45,.05,.25,1)', fill:'forwards'})
+        .then(function(){ row.classList.remove('pre'); return anim(g, [{opacity:1},{opacity:0}], {duration:300, fill:'forwards'}); })
+        .then(function(){ g.remove(); $('.to', row).classList.remove('pre'); return wait(RM ? 60 : 450); })
+        .then(flyOne);
+    };
+    return flyOne();
+  }
+  if (step === 3){
+    var cards = $$('#v-board .scard');
+    if (!prevRects) return Promise.resolve();
+    cards.forEach(function(c){ c.style.opacity = '0'; });
+    var n = 0;
+    var flip = function(){
+      if (n >= cards.length){ cards.forEach(function(c){ c.style.opacity = ''; }); return Promise.resolve(); }
+      var c = cards[n], from = prevRects[n], to = rel(c); n++;
+      c.style.opacity = '';
+      return anim(c, [{transform:'translate(' + (from.x - to.x) + 'px,' + (from.y - to.y) + 'px) scale(' + (from.w / to.w) + ',' + (from.h / to.h) + ')', opacity:.35},{transform:'none', opacity:1}], {duration:650, easing:'cubic-bezier(.2,.7,.2,1)'})
+        .then(function(){ return wait(RM ? 0 : 120); }).then(flip);
+    };
+    return flip();
+  }
+  if (step === 4){
+    var cc = $$('#v-board .ccard'), m = 0;
+    cc.forEach(function(c){ c.style.visibility = 'hidden'; });
+    var drop = function(){
+      if (m >= cc.length) return Promise.resolve();
+      var c = cc[m++]; c.style.visibility = '';
+      return anim(c, [{transform:'translateY(-46px)', opacity:0},{transform:'none', opacity:1}], {duration:600, easing:'cubic-bezier(.2,.8,.3,1)'}).then(function(){ return wait(RM ? 0 : 200); }).then(drop);
+    };
+    return drop();
+  }
+  return Promise.resolve();
+}
+$('#a1next').addEventListener('click', function(){
+  if (busy1) return;
+  if (a1 === 4){ go('act2'); return; }
+  busy1 = true; a1++;
+  renderA1(a1, true).catch(function(){}).then(function(){ busy1 = false; a1Foot(); });
+});
+$('#a1back').addEventListener('click', function(){
+  if (busy1) return;
+  if (a1 === 0){ go('start'); return; }
+  a1--; renderA1(a1, false);
+});
+
+/* ================= ACT 2 ================= */
+var a2 = 0, busy2 = false;
+var A2 = [
+  {t:'Each IEP becomes a set of lesson settings', d:'The blueprint stays fixed. The accommodations already written into each IEP decide how it is delivered.'},
+  {t:'Maya’s IEP plugs in', d:'Maya reads at grade level, learns visually, and is sensitive to sound. Her lesson is quiet and calm, with short sentences.'},
+  {t:'Jordan’s IEP plugs in', d:'Jordan is an early reader who uses an AAC tablet. His lesson uses one word per scene, narration, slower pacing, and big pictures.'},
+  {t:'Two lessons, one curriculum', d:'Both lessons cover the same stages, the same source sentences, and the same science vocabulary.'}
+];
+$('#strip').innerHTML = ORDER.map(function(k, i){
+  return (i ? '<span class="qdot">?</span>' : '') + '<div class="mthumb" data-st="' + k + '"><div class="tb"></div><b style="color:' + ST[k].ink + '">' + BLUE[k].kw + '</b></div>';
+}).join('') + '<span class="qdot">?</span>';
+$$('#strip .mthumb').forEach(function(m){ new Scene($('.tb', m)).set(THUMB[m.getAttribute('data-st')]); });
+
+function laneHTML(P){
+  var maya = P.key === 'maya', c = CAP[P.key].e2;
+  return '<div class="lane" id="lane-' + P.key + '">' +
+    '<div class="slot"><span class="ph">' + P.name + '’s IEP</span>' +
+      '<article class="pcard" style="--pc:' + P.soft + '"><div class="pc-top"><span class="av" style="background:' + P.color + '">' + P.initial + '</span><div><b>' + P.name + '</b><small>Grade 7 · fictional student</small></div><span class="pc-doc">IEP</span></div>' +
+      '<span class="pc-lbl">Student profile</span><div class="pc-tags">' + P.tags.map(function(t){ return '<span>' + t + '</span>'; }).join('') + '</div></article></div>' +
+    '<div class="plug"><svg viewBox="0 0 56 212" preserveAspectRatio="none" aria-hidden="true"><path d="M0 106 H56" stroke="' + P.color + '" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="28" cy="106" r="11" fill="#fff" stroke="' + P.color + '" stroke-width="5"/></svg></div>' +
+    '<div class="out"><span class="ph">Adapted lesson appears here</span><div class="outin">' +
+      '<div class="mini"><div class="mini-bar"><span>' + P.name + ' · Scene 3 · Evaporation</span>' + use(P.sound ? 'speaker' : 'mute') + '</div><div class="mini-th"></div>' +
+      '<div class="mini-cap' + (maya ? '' : ' big') + '"><b style="color:' + ST.E.ink + '">' + c.kw + '</b>' + (maya ? '<span>' + c.t + '</span>' : '') + '</div>' +
+      '<div class="mini-ctrl"><i>' + use('hand') + '</i><i>' + use('again') + '</i><i>' + use('thumb') + '</i><i>' + use('pause') + '</i></div></div>' +
+      '<ul class="chips">' + P.acc.map(function(a){ return '<li>' + use(a.i) + a.t + '</li>'; }).join('') + '</ul>' +
+    '</div></div></div>';
+}
+$('#lanes').innerHTML = laneHTML(PROFILES.maya) + laneHTML(PROFILES.jordan);
+['maya','jordan'].forEach(function(k){
+  var sc = new Scene($('#lane-' + k + ' .mini-th'), {sparse:PROFILES[k].sparse});
+  sc.set(Object.assign({}, THUMB.E));
+});
+var SRC_USED = {}; BEATS.forEach(function(b){ SRC_USED[b.src] = 1; }); ORDER.forEach(function(k){ SRC_USED[CHECKS[k].src] = 1; });
+var SRC_N = Object.keys(SRC_USED).length;
+$('#fid').innerHTML = [ '4 of 4 stages', SRC_N + ' of ' + SRC_N + ' source sentences', '4 science terms kept', '4 checkpoints' ].map(function(t){ return '<span>' + use('check') + t + '</span>'; }).join('') ;
+
+function laneState(k, on){
+  var L = $('#lane-' + k);
+  $('.slot', L).classList.toggle('full', on);
+  $('.out', L).classList.toggle('full', on);
+  $('.pcard', L).style.display = on ? '' : 'none';
+  $('.outin', L).style.display = on ? '' : 'none';
+  $('.plug', L).classList.toggle('on', on);
+  $$('.chips li, .mini', L).forEach(function(el){ el.classList.remove('pre'); });
+}
+function plugAnim(k){
+  var L = $('#lane-' + k), card = $('.pcard', L), outin = $('.outin', L), mini = $('.mini', L), chips = $$('.chips li', L);
+  $('.slot', L).classList.add('full');
+  card.style.display = '';
+  return anim(card, [{transform:'translateX(-50px)', opacity:0},{transform:'none', opacity:1}], {duration:700, easing:'cubic-bezier(.2,.7,.2,1)'})
+    .then(function(){ $('.plug', L).classList.add('on'); return wait(RM ? 0 : 900); })
+    .then(function(){
+      $('.out', L).classList.add('full'); outin.style.display = '';
+      mini.classList.add('pre'); chips.forEach(function(c){ c.classList.add('pre'); });
+      var strip = $('#strip'), from = rel(strip), to = rel(mini);
+      var g = strip.cloneNode(true); g.removeAttribute('id');
+      g.style.cssText = 'position:absolute;z-index:50;left:' + from.x + 'px;top:' + from.y + 'px;width:' + from.w + 'px;height:' + from.h + 'px;transform-origin:0 0;pointer-events:none;display:flex;align-items:center;gap:6px';
+      app.appendChild(g);
+      var sx = to.w / from.w, sy = to.h / from.h;
+      return anim(g, [{transform:'none', opacity:1},{transform:'translate(' + (to.x - from.x) + 'px,' + (to.y - from.y) + 'px) scale(' + sx + ',' + sy + ')', opacity:.15}], {duration:850, easing:'cubic-bezier(.45,.05,.25,1)', fill:'forwards'})
+        .then(function(){ g.remove(); mini.classList.remove('pre'); return anim(mini, [{opacity:0},{opacity:1}], {duration:500}); });
+    })
+    .then(function(){
+      var i = 0;
+      var one = function(){ if (i >= chips.length) return Promise.resolve(); var c = chips[i++]; c.classList.remove('pre'); return anim(c, [{opacity:0, transform:'translateX(-12px)'},{opacity:1, transform:'none'}], {duration:380}).then(function(){ return wait(RM ? 0 : 160); }).then(one); };
+      return one();
+    });
+}
+function a2Foot(){
+  $('#a2next').innerHTML = (a2 === 3 ? 'Next: Teacher review' : 'Next') + use('next');
+  $('#a2next').disabled = busy2; $('#a2back').disabled = busy2;
+}
+function renderA2(step, animate){
+  $('#a2t').textContent = A2[step].t; $('#a2d').textContent = A2[step].d;
+  a2Foot();
+  $('#fid').style.visibility = step >= 3 ? '' : 'hidden';
+  if (animate && step === 1){ laneState('maya', false); laneState('jordan', false); return plugAnim('maya'); }
+  if (animate && step === 2){ laneState('maya', true); laneState('jordan', false); return plugAnim('jordan'); }
+  laneState('maya', step >= 1); laneState('jordan', step >= 2);
+  if (animate && step === 3){ return anim($('#fid'), [{opacity:0, transform:'translateY(8px)'},{opacity:1, transform:'none'}], {duration:600}); }
+  return Promise.resolve();
+}
+$('#a2next').addEventListener('click', function(){
+  if (busy2) return;
+  if (a2 === 3){ go('review'); return; }
+  busy2 = true; a2++;
+  renderA2(a2, true).catch(function(){}).then(function(){ busy2 = false; a2Foot(); });
+});
+$('#a2back').addEventListener('click', function(){
+  if (busy2) return;
+  if (a2 === 0){ go('act1'); return; }
+  a2--; renderA2(a2, false);
+});
+
+/* ================= TEACHER REVIEW ================= */
+function scriptHTML(P){
+  var rows = '';
+  BEATS.forEach(function(b, i){
+    var c = CAP[P.key][b.id], s = ST[b.st];
+    rows += '<li class="sr"><span class="sr-n">' + (i + 1) + '</span><div><div class="sr-top"><span class="tag" style="--c:' + s.hl + ';--i:' + s.ink + '">' + (b.id === 'fin' ? 'Cycle repeats' : s.name) + '</span><b>' + c.kw + '</b></div>' +
+      (P.sentences ? '<p>On screen: ' + c.t + '</p>' : '<p>On screen: <b>' + c.kw + '</b> (one key word, picture-led)</p>') +
+      (P.sound ? '<p>Narration: “' + c.n + '”</p>' : '<p class="muted">Narration: off (sound-sensitive)</p>') +
+      '<p class="srcq">Source: <mark style="--c:' + s.hl + '">' + SENT[b.src].text + '</mark></p></div></li>';
+    if (b.check){
+      var ck = CHECKS[b.check], d = ck[P.key];
+      rows += '<li class="sr ckrow"><span class="sr-n">?</span><div><div class="sr-top"><span class="tag" style="--c:' + ST[b.check].hl + ';--i:' + ST[b.check].ink + '">Checkpoint</span><b>' + d.q + '</b></div>' +
+        '<p>Picture choices: ' + d.ch.map(function(x){ return x === ck.correct ? '<span class="ok">' + CHOICE[x].label + ' (correct)</span>' : CHOICE[x].label; }).join(', ') + (P.typing ? '. Typing accepted.' : P.listen ? '. AAC voice output accepted.' : '') + '</p>' +
+        '<p class="muted">If missed: replay with “' + d.hint + '”, then retry with support. No penalty.</p></div></li>';
+    }
+  });
+  return rows;
+}
+function renderReview(){
+  $('#rvcols').innerHTML = ['maya','jordan'].map(function(k){
+    var P = PROFILES[k], ap = APPROVED[k];
+    return '<div class="rcol"><div class="rhead"><span class="av" style="background:' + P.color + '">' + P.initial + '</span><div><b>' + P.name + '’s script</b><small>' + BEATS.length + ' scenes · 4 checkpoints · ' + (P.sound ? 'narrated' : 'silent') + ' · scroll to read all</small></div>' +
+      '<div class="tags">' + P.acc.slice(0, 3).map(function(a){ return '<span class="tag">' + a.t.split(':')[0] + '</span>'; }).join('') + '</div></div>' +
+      '<ol class="rlist">' + scriptHTML(P) + '</ol>' +
+      '<div class="rfoot">' + (ap ? '<span class="st okt">' + use('check').replace('<svg ', '<svg style="width:26px;height:26px;vertical-align:-7px;margin-right:6px" ') + 'Approved at ' + ap + '</span>' :
+        '<span class="st">Review the script, then approve.</span><button class="btn okb" type="button" data-approve="' + k + '" style="margin-left:auto">' + use('check') + 'Approve ' + P.name + '’s lesson</button>') + '</div></div>';
+  }).join('');
+  var both = APPROVED.maya && APPROVED.jordan;
+  $('#rvnext').disabled = !both;
+  $('#rvmsg').textContent = both ? 'Both scripts approved. The lessons are ready.' : 'Approve both scripts to open the lessons.';
+}
+document.addEventListener('click', function(e){
+  var t = e.target.closest ? e.target.closest('[data-approve]') : null;
+  if (!t) return;
+  approve(t.getAttribute('data-approve'));
+});
+function approve(k){
+  APPROVED[k] = nowTime() || 'now';
+  if (cur === 'review') renderReview();
+  if (players[k]) players[k].refreshSplash();
+}
+$('#rvnext').addEventListener('click', function(){ if (APPROVED.maya && APPROVED.jordan) go('lessons'); });
+
+/* ================= PLAYER ================= */
+var SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+function matchAnswer(text, choices){
+  var words = (String(text).toLowerCase().match(/[a-z]+/g) || []);
+  var hit = null;
+  choices.forEach(function(c){ if (hit) return; if (CHOICE[c].words.some(function(w){ return words.indexOf(w) >= 0; })) hit = c; });
+  return hit;
+}
+function Player(root, P){
+  this.root = root; this.P = P; this.gen = 0;
+  this.reset(true);
+}
+Player.prototype.reset = function(first){
+  var P = this.P, self = this;
+  this.gen++;
+  if (this.breakTimer) clearInterval(this.breakTimer);
+  this.phase = 'splash'; this.beat = 0; this.ready = false; this.stage = null;
+  this.wrong = {}; this.out = {}; this.breakOffered = false; this.resumeTo = null; this.label = null;
+  this.stats = {started:false, startAt:0, endAt:0, stages:{}, again:0, hints:0, questions:[], breaks:0, checks:{}, modes:{tap:0, typed:0, spoken:0}, loops:0, finished:false};
+  var root = this.root;
+  root.classList.toggle('no-sent', !P.sentences);
+  root.innerHTML =
+    '<div class="pl-head">' +
+      '<div class="pl-who"><span class="av" style="background:' + P.color + '">' + P.initial + '</span><span class="nm">' + P.name + '</span></div>' +
+      '<ol class="sched" aria-label="Lesson schedule">' + ['N','E','C','P','L','done'].map(function(k){ return '<li data-k="' + k + '" aria-label="' + (k === 'done' ? 'Finish' : ST[k].name) + '">' + use(k === 'done' ? 'star' : ST[k].icon) + use('check', 'tick') + '</li>'; }).join('') + '</ol>' +
+      '<div class="pl-sound">' + use(P.sound ? 'speaker' : 'mute') + '<span>' + (P.sound ? 'Narration on' : 'Sound off') + '</span></div>' +
+      '<button class="pl-src" type="button" aria-label="Show the textbook sentence for this scene">' + use('book') + '<span>Source</span></button>' +
+    '</div>' +
+    '<div class="pl-main">' +
+      '<div class="pl-stage"></div>' +
+      '<div class="pl-cap" aria-live="polite"><div class="kw"></div><div class="sent"></div><div class="cue">' + use('thumb') + '<span>Tap Got it</span></div></div>' +
+      '<div class="ov ov-check" hidden></div>' +
+      '<div class="ov ov-q" hidden></div>' +
+      '<div class="ov ov-src" hidden></div>' +
+    '</div>' +
+    '<div class="pl-ctrl">' +
+      '<button class="cbtn" type="button" data-a="question">' + use('hand') + '<span>Question</span></button>' +
+      '<button class="cbtn" type="button" data-a="again">' + use('again') + '<span>Again</span></button>' +
+      '<button class="cbtn" type="button" data-a="got">' + use('thumb') + '<span>Got it</span></button>' +
+      '<button class="cbtn" type="button" data-a="brk">' + use('pause') + '<span>Break</span></button>' +
+    '</div>' +
+    '<div class="ov ov-full ov-splash"></div>' +
+    '<div class="ov ov-full ov-break" hidden></div>';
+  this.el = {
+    main:$('.pl-main', root), stage:$('.pl-stage', root), kw:$('.kw', root), sent:$('.sent', root), cue:$('.cue', root),
+    check:$('.ov-check', root), q:$('.ov-q', root), src:$('.ov-src', root), splash:$('.ov-splash', root), brk:$('.ov-break', root),
+    btn:{question:$('[data-a="question"]', root), again:$('[data-a="again"]', root), got:$('[data-a="got"]', root), brk:$('[data-a="brk"]', root)}
+  };
+  this.scene = new Scene(this.el.stage, {sparse:P.sparse});
+  this.scene.set(Object.assign({}, SNAP[0], {dop:1}));
+  Object.keys(this.el.btn).forEach(function(a){ self.el.btn[a].addEventListener('click', function(){ self.onCtrl(a); }); });
+  $('.pl-src', root).addEventListener('click', function(){ self.openSource(); });
+  this.setTint('N');
+  this.caption('N', '', '');
+  this.sched();
+  this.setButtons();
+  this.refreshSplash();
+};
+Player.prototype.alive = function(g){ var self = this; return function(){ return g === self.gen; }; };
+Player.prototype.setTint = function(st){ this.root.style.setProperty('--tint', ST[st].bg); this.root.style.setProperty('--sink', ST[st].ink); };
+Player.prototype.caption = function(st, kw, t){ this.el.kw.style.color = ST[st].ink; this.el.kw.textContent = kw; this.el.sent.textContent = this.P.sentences ? t : ''; };
+Player.prototype.say = function(text){
+    /* A tapped button's name is spoken first, in the same utterance, so it never trails the narration. */
+  var lab = this.label; this.label = null;
+  if (!this.P.sound) return Promise.resolve();
+  var t = lab ? (text ? lab + '. ' + text : lab) : text;
+  if (!t) return Promise.resolve();
+  return Speech.say(t, {rate:this.P.rate, owner:this});
+};
+Player.prototype.sched = function(){
+  var self = this, b = BEATS[this.beat], curK = this.phase === 'end' || (b && b.id === 'fin' && this.phase !== 'splash') ? 'done' : (this.phase === 'splash' ? null : (this.stage && /check|correct|wrong|hint/.test(this.phase) ? this.stage : b.st));
+  $$('.sched li', this.root).forEach(function(li){
+    var k = li.getAttribute('data-k');
+    li.classList.toggle('cur', k === curK);
+    var done = k === 'N' ? (self.stats.started && self.beat > 0) : k === 'done' ? self.stats.finished : !!self.stats.stages[k];
+    li.classList.toggle('done', !!done);
+  });
+};
+Player.prototype.setButtons = function(){
+  var ph = this.phase, r = this.ready;
+  var en = {
+    question: /scene|check|correct|end|wrong|hint/.test(ph),
+    again: ph === 'scene' || ph === 'check' || ph === 'end',
+    got: (ph === 'scene' && r) || (ph === 'correct' && r),
+    brk: /scene|check|correct|end|wrong|hint/.test(ph)
+  };
+  var b = this.el.btn;
+  Object.keys(b).forEach(function(k){ b[k].setAttribute('aria-disabled', en[k] ? 'false' : 'true'); });
+  this.el.cue.classList.toggle('on', ph === 'scene' && r);
+};
+Player.prototype.refreshSplash = function(){
+  var P = this.P, self = this, sp = this.el.splash;
+  if (this.phase !== 'splash'){ sp.hidden = true; return; }
+  sp.hidden = false;
+  var ok = !!APPROVED[P.key];
+  sp.innerHTML = '<div class="splash">' + dripSVG('happy') + '<h3>Hi, ' + P.name + '!</h3><p>Today: the water cycle</p>' +
+    '<div class="sp-sched">' + ORDER.map(function(k){ return '<span>' + use(ST[k].icon) + '</span>'; }).join('') + '</div>' +
+    (ok ? '<button class="bigbtn" type="button" data-s="go">' + use('play') + 'Start</button>' :
+      '<div class="wait"><b>Waiting for teacher approval</b><span>A teacher reviews this script before ' + P.name + ' sees it.</span><button class="btn okb" type="button" data-s="approve">' + use('check') + 'Approve (teacher)</button></div>') + '</div>';
+  var g = $('[data-s="go"]', sp), a = $('[data-s="approve"]', sp);
+  if (g) g.addEventListener('click', function(){ self.begin(); });
+  if (a) a.addEventListener('click', function(){ approve(P.key); });
+};
+Player.prototype.begin = function(){
+  Speech.unlock(); Snd.unlock();
+  this.stats.started = true; this.stats.startAt = Date.now();
+  this.el.splash.hidden = true;
+  this.playBeat(0);
+};
+Player.prototype.hideOverlays = function(keepQ){
+  this.el.check.hidden = true; this.el.src.hidden = true;
+  if (!keepQ) this.el.q.hidden = true;
+};
+Player.prototype.playBeat = function(i, opts){
+  opts = opts || {};
+  var self = this, b = BEATS[i], g = ++this.gen;
+  this.phase = 'scene'; this.beat = i; this.ready = false; this.stage = b.st;
+  this.hideOverlays();
+  this.scene.set(Object.assign({}, SNAP[i]));
+  this.setTint(b.st);
+  var c = CAP[this.P.key][b.id];
+  this.caption(b.st, c.kw, c.t || '');
+  this.sched(); this.setButtons();
+  var narr = this.say(CAP.jordan[b.id].n);
+  var animP = runSteps(this.scene, b.steps, this.P.pace, this.alive(g));
+  Promise.all([animP, narr]).then(function(){
+    if (g !== self.gen) return;
+    return wait(self.P.sound ? 800 : 300).then(function(){
+      if (g !== self.gen) return;
+      self.ready = true; self.setButtons();
+    });
+  });
+};
+Player.prototype.onCtrl = function(a){
+  var btn = this.el.btn[a];
+  if (btn.getAttribute('aria-disabled') === 'true') return;
+  this.label = this.P.sound ? LABELS[a] : null;
+  if (a === 'got') this.onGot();
+  else if (a === 'again') this.onAgain();
+  else if (a === 'question') this.openQuestions();
+  else if (a === 'brk') this.openBreak();
+  if (this.label) this.say('');
+};
+Player.prototype.onGot = function(){
+  var b = BEATS[this.beat];
+  if (this.phase === 'scene'){
+    if (b.check) this.showCheck(b.check);
+    else if (b.end) this.showEnd();
+    else this.playBeat(this.beat + 1);
+  } else if (this.phase === 'correct'){
+    var st = this.stage, nxt = CHECK_AFTER[st] + 1;
+    if (this.P.scheduledBreak === st && !this.breakOffered){ this.breakOffered = true; this.offerBreak(nxt); }
+    else this.playBeat(nxt);
+  }
+};
+Player.prototype.onAgain = function(){
+  this.stats.again++;
+  if (this.phase === 'scene') this.playBeat(this.beat);
+  else if (this.phase === 'check') this.replayKey(this.stage, false);
+  else if (this.phase === 'end') this.playBeat(beatIndex('fin'));
+};
+Player.prototype.replayKey = function(stage, hint){
+  var self = this, ck = CHECKS[stage], idx = beatIndex(ck.key), b = BEATS[idx], g = ++this.gen, d = ck[this.P.key];
+  this.phase = 'hint'; this.ready = false;
+  this.hideOverlays(true);
+  this.scene.set(Object.assign({}, SNAP[idx], {hlOp:0}));
+  this.setTint(stage);
+  if (hint){
+    this.stats.hints++;
+    this.caption(stage, this.P.sentences ? ST[stage].name : CHOICE[ck.correct].label, d.hint);
+  } else {
+    var c = CAP[this.P.key][b.id]; this.caption(stage, c.kw, c.t || '');
+  }
+  this.sched(); this.setButtons();
+  var narr = this.say(hint ? d.hint : CAP.jordan[b.id].n);
+  var pace = this.P.pace * (hint ? 1.15 : 1);
+  runSteps(this.scene, b.steps, pace, this.alive(g)).then(function(ok){
+    if (!ok) return;
+    if (!hint) return true;
+    self.scene.set({hlX:ck.ring.x, hlY:ck.ring.y, hlRX:ck.ring.rx, hlRY:ck.ring.ry, hlC:ST[stage].ink});
+    return tween(900, function(t){ self.scene.set({hlOp:t}); }, self.alive(g));
+  }).then(function(ok){
+    if (!ok) return;
+    return Promise.all([narr, wait(1300 * self.P.pace)]);
+  }).then(function(){
+    if (g !== self.gen) return;
+    self.scene.set({hlOp:0});
+    self.showCheck(stage);
+  });
+};
+Player.prototype.showCheck = function(stage){
+  var self = this, P = this.P, ck = CHECKS[stage], d = ck[P.key], g = ++this.gen;
+  this.phase = 'check'; this.stage = stage; this.ready = false;
+  this.scene.set(Object.assign({}, SNAP[CHECK_AFTER[stage] + 1], {hlOp:0}));
+  this.setTint(stage);
+  this.stats.checks[stage] = this.stats.checks[stage] || {tries:0, first:null, wrong:0, mode:null};
+  var out = this.out[stage] || {};
+  var remaining = d.ch.filter(function(c){ return !out[c]; });
+  var guide = (this.wrong[stage] || 0) >= 2 || remaining.length === 1;
+  var ov = this.el.check;
+  ov.innerHTML = '<div class="ck" role="group" aria-label="Checkpoint">' +
+    '<div class="ck-q">' + dripSVG('calm', '') + '<p class="ck-text">' + d.q + '</p></div>' +
+    (P.typing ? '<form class="typer" autocomplete="off"><label for="type-' + P.key + '-' + stage + '">Type it:</label><input id="type-' + P.key + '-' + stage + '" type="text" inputmode="text" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done"><button class="btn primary" type="submit">Check</button></form>' : '') +
+    '<div class="ck-choices n' + d.ch.length + '">' + d.ch.map(function(c){
+      var isOut = !!out[c], isG = guide && c === ck.correct;
+      return '<button type="button" class="choice' + (isOut ? ' is-out' : '') + (isG ? ' is-guide' : '') + '" data-c="' + c + '" aria-label="' + CHOICE[c].label + '"' + (isOut ? ' aria-disabled="true"' : '') + '>' + use(c) + '<span>' + CHOICE[c].label + '</span></button>';
+    }).join('') + '</div>' +
+    (P.listen ? '<div class="ck-row ck-listen">' + (SR && !this.srBlocked ? '<button class="btn" type="button" data-listen>' + use('aac') + '<span>Listen to my talker</span></button>' : '') + '<span class="ck-note">Point, tap, or say it with your talker.</span></div>' :
+      '<p class="ck-note">Tap a picture' + (P.typing ? ' or type your answer' : '') + '. Take your time.</p>') +
+    '<p class="ck-msg" aria-live="polite">' + (guide ? (P.sentences ? 'This one. ' + d.yes.replace(/^Yes\. /, '') : 'This one.') : '') + '</p>' +
+  '</div>';
+  ov.hidden = false;
+  $$('.choice', ov).forEach(function(b){ b.addEventListener('click', function(){ if (b.getAttribute('aria-disabled') === 'true') return; self.answer(b.getAttribute('data-c'), 'tap'); }); });
+  var form = $('form', ov);
+  if (form) form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var inp = $('input', form), v = inp.value.trim();
+    if (!v) return;
+    inp.blur();
+    var hit = matchAnswer(v, d.ch);
+    if (!hit || out[hit]){ $('.ck-msg', ov).textContent = 'I’m not sure what that means. You can type one word, or tap a picture.'; return; }
+    self.answer(hit, 'typed');
+  });
+  var lb = $('[data-listen]', ov);
+  if (lb) lb.addEventListener('click', function(){ self.listen(stage, lb); });
+  this.sched(); this.setButtons();
+  this.say(d.q + (guide ? ' This one. ' + CHOICE[ck.correct].label + '.' : ''));
+};
+Player.prototype.listen = function(stage, btn){
+  var self = this, d = CHECKS[stage][this.P.key], msg = $('.ck-msg', this.el.check), g = this.gen;
+  Speech.cancel();
+  var rec;
+  try { rec = new SR(); } catch(e){ msg.textContent = 'Listening is not available here. Tap a picture.'; return; }
+  rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 4;
+  btn.querySelector('span') && (btn.querySelector('span').textContent = 'Listening…');
+  btn.setAttribute('aria-disabled', 'true');
+  var done = false;
+  var reset = function(){ if (btn.isConnected){ btn.removeAttribute('aria-disabled'); var s = btn.querySelector('span'); if (s) s.textContent = 'Listen to my talker'; } };
+  rec.onresult = function(e){
+    done = true; if (g !== self.gen) return;
+    var alts = []; try { for (var i = 0; i < e.results[0].length; i++) alts.push(e.results[0][i].transcript); } catch(x){}
+    var hit = matchAnswer(alts.join(' '), d.ch);
+    if (hit && !(self.out[stage] || {})[hit]) self.answer(hit, 'spoken');
+    else { msg.textContent = 'I heard “' + (alts[0] || '') + '.” Try again, or tap a picture.'; reset(); }
+  };
+  rec.onerror = function(e){
+    done = true; if (g !== self.gen) return;
+    if (e && (e.error === 'not-allowed' || e.error === 'service-not-allowed')){ self.srBlocked = true; btn.remove(); msg.textContent = 'Listening is turned off on this device. Tap a picture.'; }
+    else { msg.textContent = 'I didn’t hear that. Try again, or tap a picture.'; reset(); }
+  };
+  rec.onend = function(){ if (!done && g === self.gen){ msg.textContent = 'I didn’t hear that. Try again, or tap a picture.'; } reset(); };
+  try { rec.start(); msg.textContent = 'Listening. Say the answer with your talker.'; } catch(e){ reset(); }
+};
+Player.prototype.answer = function(c, mode){
+  if (this.phase !== 'check') return;
+  var stage = this.stage, ck = CHECKS[stage], rec = this.stats.checks[stage];
+  rec.tries++; this.stats.modes[mode]++;
+  if (c === ck.correct){
+    if (rec.first === null) rec.first = true;
+    rec.mode = mode;
+    this.stats.stages[stage] = true;
+    this.celebrate(stage, false);
+  } else {
+    if (rec.first === null) rec.first = false;
+    rec.wrong++;
+    this.wrong[stage] = (this.wrong[stage] || 0) + 1;
+    (this.out[stage] = this.out[stage] || {})[c] = true;
+    this.retry(stage);
+  }
+};
+Player.prototype.celebrate = function(stage, quiet){
+  var self = this, d = CHECKS[stage][this.P.key], g = ++this.gen;
+  this.phase = 'correct'; this.ready = false; this.stage = stage;
+  this.scene.set(Object.assign({}, SNAP[CHECK_AFTER[stage] + 1]));
+  this.setTint(stage);
+  var ov = this.el.check;
+  ov.innerHTML = '<div class="yay">' + dripSVG('big') + (quiet ? '' : '<div class="stars">' + use('star') + use('star') + use('star') + '</div>') + '<p class="say">' + d.yes + '</p><p class="next">Tap ' + use('thumb') + ' Got it to keep going.</p></div>';
+  ov.hidden = false;
+  this.sched(); this.setButtons();
+  if (!quiet && this.P.sound) Snd.chime();
+  var narr = quiet ? Promise.resolve() : this.say(d.yes);
+  Promise.all([narr, wait(quiet ? 200 : 900)]).then(function(){ if (g !== self.gen) return; self.ready = true; self.setButtons(); });
+};
+Player.prototype.retry = function(stage){
+  var self = this, g = ++this.gen, P = this.P;
+  this.phase = 'wrong'; this.ready = false;
+  var ov = this.el.check;
+  ov.innerHTML = '<div class="oops">' + dripSVG('calm') + '<p class="say">' + (P.sentences ? 'Good try. Let’s watch that part again.' : 'Good try. Look again.') + '</p></div>';
+  ov.hidden = false;
+  this.sched(); this.setButtons();
+  var narr = this.say('Good try. Look again.');
+  Promise.all([narr, wait(1800 * P.pace)]).then(function(){ if (g !== self.gen) return; self.replayKey(stage, true); });
+};
+Player.prototype.offerBreak = function(nextBeat){
+  var self = this, g = ++this.gen;
+  this.phase = 'offer'; this.ready = false;
+  var ov = this.el.check;
+  ov.innerHTML = '<div class="ck"><div class="ck-q">' + dripSVG('calm', '') + '<p class="ck-text">Break time?</p></div><div class="offer">' +
+    '<button type="button" class="choice" data-o="brk">' + use('pause') + '<span>Break</span></button>' +
+    '<button type="button" class="choice" data-o="go">' + use('thumb') + '<span>Keep going</span></button></div><p class="ck-note">This break is part of the plan. Both choices are okay.</p></div>';
+  ov.hidden = false;
+  this.setButtons();
+  this.say('Break time? Break, or keep going.');
+  $('[data-o="brk"]', ov).addEventListener('click', function(){ if (g !== self.gen) return; self.resumeTo = {beat:nextBeat}; self.label = self.P.sound ? 'Break' : null; self.openBreak(true); });
+  $('[data-o="go"]', ov).addEventListener('click', function(){ if (g !== self.gen) return; self.playBeat(nextBeat); });
+};
+Player.prototype.openBreak = function(fromOffer){
+  var self = this, P = this.P;
+  if (!fromOffer) this.resumeTo = {phase:this.phase, beat:this.beat, stage:this.stage};
+  this.gen++;
+  this.stats.breaks++;
+  this.el.q.hidden = true; this.el.src.hidden = true;
+  var left = P.breakSecs;
+  var ov = this.el.brk;
+  ov.innerHTML = '<div class="brk"><div class="breathe">' + dripSVG('sleepy', '') + '</div><h3>Break</h3><p>' + (P.sentences ? 'Breathe in as the circle grows. Breathe out as it gets smaller.' : 'Breathe in. Breathe out.') + '</p><div class="timer" aria-live="off">' + fmtDur(left * 1000) + '</div><button class="bigbtn" type="button" data-r>' + use('thumb') + 'I’m ready</button></div>';
+  ov.hidden = false;
+  var tm = $('.timer', ov);
+  if (this.breakTimer) clearInterval(this.breakTimer);
+  this.breakTimer = setInterval(function(){
+    left--;
+    if (left <= 0){ clearInterval(self.breakTimer); self.breakTimer = null; tm.textContent = 'Ready when you are.'; }
+    else tm.textContent = fmtDur(left * 1000);
+  }, 1000);
+  this.setButtons();
+  this.say('Breathe in. Breathe out.');
+  $('[data-r]', ov).addEventListener('click', function(){ self.endBreak(); });
+};
+Player.prototype.endBreak = function(){
+  if (this.breakTimer){ clearInterval(this.breakTimer); this.breakTimer = null; }
+  this.el.brk.hidden = true;
+  this.label = this.P.sound ? 'Ready' : null;
+  var r = this.resumeTo || {phase:'scene', beat:this.beat}; this.resumeTo = null;
+  if (r.phase === undefined) { this.playBeat(r.beat); if (this.label) this.say(''); return; }
+  if (r.phase === 'scene') this.playBeat(r.beat);
+  else if (r.phase === 'check' || r.phase === 'wrong' || r.phase === 'hint') this.showCheck(r.stage);
+  else if (r.phase === 'correct') this.celebrate(r.stage, true);
+  else if (r.phase === 'offer') this.playBeat(CHECK_AFTER[r.stage] + 1);
+  else if (r.phase === 'end') this.showEnd(true);
+  else this.playBeat(r.beat || 0);
+  if (this.label) this.say('');
+};
+Player.prototype.showEnd = function(quiet){
+  var self = this, P = this.P, g = ++this.gen;
+  this.phase = 'end'; this.ready = false;
+  if (!this.stats.finished){ this.stats.finished = true; this.stats.endAt = Date.now(); }
+  var ov = this.el.check;
+  ov.innerHTML = '<div class="endc">' + dripSVG('big') + '<p class="say">' + (P.sentences ? 'You finished the water cycle.' : 'You did it!') + '</p>' +
+    '<div class="endrow">' + ORDER.map(function(k){ return '<span>' + use(ST[k].icon) + '</span>'; }).join('') + '</div>' +
+    '<button class="bigbtn soft" type="button" data-loop>' + use('loop') + 'Go around again</button></div>';
+  ov.hidden = false;
+  this.sched(); this.setButtons();
+  if (!quiet) this.say('You did it! The water cycle!');
+  $('[data-loop]', ov).addEventListener('click', function(){ if (g !== self.gen) return; self.stats.loops++; self.playBeat(0); });
+};
+Player.prototype.openQuestions = function(){
+  var self = this, P = this.P;
+  var st = /check|correct|wrong|hint|offer/.test(this.phase) ? this.stage : BEATS[this.beat].st;
+  if (st === 'N' && BEATS[this.beat].id === 'fin') st = 'L';
+  var list = QA[st].concat([TEACHER_Q]);
+  var ov = this.el.q;
+  ov.innerHTML = '<div class="qs" role="dialog" aria-label="Questions">' +
+    '<div class="qs-head">' + use('hand') + '<b>' + (P.sentences ? 'Questions about ' + ST[st].name.toLowerCase() : 'Questions') + '</b><button class="btn" type="button" data-x>' + use('x') + 'Done</button></div>' +
+    '<div class="qs-ans">' + use('hand') + '<p class="empty">' + (P.sentences ? 'Tap a question to see the answer.' : 'Tap a question.') + '</p></div>' +
+    '<div class="qs-grid">' + list.map(function(x, i){ return '<button type="button" class="qt" data-i="' + i + '">' + use(x.i) + '<span>' + (P.sentences ? x.q : x.qj) + '</span></button>'; }).join('') + '</div></div>';
+  ov.hidden = false;
+  $('[data-x]', ov).addEventListener('click', function(){ ov.hidden = true; if (P.sound) Speech.say('Done', {rate:P.rate, owner:self}); });
+  $$('.qt', ov).forEach(function(b){
+    b.addEventListener('click', function(){
+      var x = list[+b.getAttribute('data-i')];
+      $$('.qt', ov).forEach(function(o){ o.classList.toggle('sel', o === b); });
+      var box = $('.qs-ans', ov);
+      box.innerHTML = use(x.i) + '<p>' + (P.sentences ? x.a : x.aj) + '</p>';
+      self.stats.questions.push({stage:st, q:P.sentences ? x.q : x.qj, teacher:x === TEACHER_Q});
+      if (P.sound) Speech.say(x.qj + '. ' + x.aj, {rate:P.rate, owner:self});
+    });
+  });
+};
+Player.prototype.openSource = function(){
+  var self = this;
+  if (this.phase === 'splash') return;
+  var b = BEATS[this.beat], useCheck = /check|correct|wrong|hint|offer/.test(this.phase);
+  var sid = useCheck ? CHECKS[this.stage].src : b.src, s = SENT[sid];
+  var onScreen = useCheck ? CHECKS[this.stage][this.P.key].q : (this.P.sentences ? CAP.maya[b.id].t : CAP.jordan[b.id].kw + ' (narrated: “' + CAP.jordan[b.id].n + '”)');
+  var ov = this.el.src;
+  ov.innerHTML = '<div class="srcs" role="dialog" aria-label="Textbook source"><div class="h">' + use('book') + '<b>From the textbook</b></div>' +
+    '<div class="meta">Earth Science, Grade 7 · Lesson 7.2 · ' + s.para + ' paragraph</div>' +
+    '<blockquote><mark style="--c:' + ST[s.st].hl + '">' + s.text + '</mark></blockquote>' +
+    '<div class="now"><b>On screen now:</b> ' + esc(onScreen) + '</div>' +
+    '<button class="btn" type="button" data-x>' + use('x') + 'Close</button></div>';
+  ov.hidden = false;
+  $('[data-x]', ov).addEventListener('click', function(){ ov.hidden = true; });
+};
+Player.prototype.hiddenNow = function(){ Speech.stopOwner(this); };
+
+var players = {maya:new Player($('#pl-maya'), PROFILES.maya), jordan:new Player($('#pl-jordan'), PROFILES.jordan)};
+var mode = 'maya';
+function setMode(m){
+  mode = m;
+  var box = $('#players');
+  box.className = 'players ' + (m === 'side' ? 'side' : 'm-' + m);
+  $$('.seg button').forEach(function(b){ var on = b.getAttribute('data-mode') === m; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+  if (m === 'maya') players.jordan.hiddenNow();
+  if (m === 'jordan') players.maya.hiddenNow();
+}
+$$('.seg button').forEach(function(b){ b.addEventListener('click', function(){ setMode(b.getAttribute('data-mode')); }); });
+
+/* ================= SUMMARY ================= */
+function renderSummary(){
+  $('#sumcols').innerHTML = ['maya','jordan'].map(function(k){
+    var P = PROFILES[k], s = players[k].stats;
+    var status = !s.started ? ['Not started', ''] : s.finished ? ['Finished', 'fin'] : ['In progress', 'prog'];
+    var stagesDone = ORDER.filter(function(x){ return s.stages[x]; }).length;
+    var attempted = ORDER.filter(function(x){ return s.checks[x]; });
+    var firstTry = attempted.filter(function(x){ return s.checks[x].first === true; }).length;
+    var time = s.started ? fmtDur((s.finished ? s.endAt : Date.now()) - s.startAt) : '–';
+    var obs = [];
+    ORDER.forEach(function(x){
+      var c = s.checks[x]; if (!c || c.first === null) return;
+      if (c.first === true) obs.push(ST[x].name + ': correct on the first try' + (c.mode && c.mode !== 'tap' ? ' (' + (c.mode === 'spoken' ? 'answered with AAC voice' : 'typed the answer') + ')' : '') + '.');
+      else if (s.stages[x]) obs.push(ST[x].name + ': needed a replay with a hint, then answered correctly (try ' + c.tries + ').');
+      else obs.push(ST[x].name + ': working on it. ' + c.wrong + ' missed ' + (c.wrong === 1 ? 'try' : 'tries') + ' so far.');
+    });
+    s.questions.forEach(function(q){ obs.push(q.teacher ? 'Asked for the teacher during ' + ST[q.stage].name.toLowerCase() + '.' : 'Asked: “' + q.q + '”'); });
+    if (s.breaks) obs.push('Took ' + s.breaks + (s.breaks === 1 ? ' break.' : ' breaks.'));
+    if (s.loops) obs.push('Chose to go around the cycle again' + (s.loops > 1 ? ' ' + s.loops + ' times.' : '.'));
+    if (!obs.length) obs.push(s.started ? 'No checkpoints answered yet.' : 'No activity yet. Open Lessons and tap Start.');
+    var m = s.modes;
+    return '<div class="rcol"><div class="rhead"><span class="av" style="background:' + P.color + '">' + P.initial + '</span><div><b>' + P.name + '</b><small>Water cycle · ' + (APPROVED[k] ? 'script approved ' + APPROVED[k] : 'script not yet approved') + '</small></div><span class="pill ' + status[1] + '">' + status[0] + '</span></div>' +
+      '<div class="sum"><h4>Stages completed: ' + stagesDone + ' of 4</h4><div class="stg">' + ORDER.map(function(x){ return '<div class="' + (s.stages[x] ? 'done' : '') + '" style="--c:' + ST[x].hl + ';--i:' + ST[x].ink + '">' + use(s.stages[x] ? 'check' : ST[x].icon) + ST[x].name + '</div>'; }).join('') + '</div>' +
+      '<div class="metrics">' +
+        '<div class="metric"><b>' + firstTry + '/' + attempted.length + '</b><span>Right on first try</span></div>' +
+        '<div class="metric"><b>' + s.again + '</b><span>Replays (Again)</span></div>' +
+        '<div class="metric"><b>' + s.hints + '</b><span>Hint replays</span></div>' +
+        '<div class="metric"><b>' + s.questions.length + '</b><span>Questions asked</span></div>' +
+        '<div class="metric"><b>' + s.breaks + '</b><span>Breaks</span></div>' +
+        '<div class="metric"><b>' + time + '</b><span>Time in lesson</span></div>' +
+      '</div>' +
+      '<h4>Answered by: tap ' + m.tap + ' · typed ' + m.typed + ' · AAC voice ' + m.spoken + '</h4>' +
+      '<h4>Notes</h4><ul class="obs">' + obs.map(function(o){ return '<li>' + esc(o) + '</li>'; }).join('') + '</ul></div></div>';
+  }).join('');
+}
+
+/* ================= boot ================= */
+Speech.init();
+fit();
+go('start');
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ fit(); if (cur === 'act1') layoutBook(); });
+setTimeout(fit, 400);
+})();
+</script>
+</body>
+</html>
